@@ -56,7 +56,10 @@
         "sections.rich-text",
         "sections.pricing",
         "sections.lead-form",
-        "sections.dynamic-content"
+        "sections.dynamic-content",
+        "sections.image",
+        "sections.dangerous-html",
+        "sections.level-model"
       ],
       "pluginOptions": {
         "i18n": {
