@@ -7,7 +7,7 @@
       "localizations": [
         {
           "id": 5,
-          "locale": "fr"
+          "locale": "de"
         }
       ],
       "shortName": "Home",
@@ -159,7 +159,7 @@
       "localizations": [
         {
           "id": 6,
-          "locale": "fr"
+          "locale": "de"
         }
       ],
       "shortName": "Pricing",
@@ -241,7 +241,7 @@
       "localizations": [
         {
           "id": 7,
-          "locale": "fr"
+          "locale": "de"
         }
       ],
       "shortName": "Secret",
@@ -267,7 +267,7 @@
       "localizations": [
         {
           "id": 8,
-          "locale": "fr"
+          "locale": "de"
         }
       ],
       "shortName": "Contact",

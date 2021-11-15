@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
+    "develop": "railway run strapi develop",
     "start": "NODE_ENV=production railway run strapi start",
     "build": "NODE_ENV=production strapi build",
     "strapi": "strapi"
@@ -21,10 +21,12 @@
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-email-designer": "^1.1.7",
     "strapi-plugin-graphql": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-email-sendgrid": "^3.6.8",
     "strapi-utils": "3.6.8"
   },
   "author": {

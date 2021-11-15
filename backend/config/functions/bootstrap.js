@@ -1,9 +1,5 @@
 const fs = require("fs");
-const {
-  pages,
-  globals,
-  leadFormSubmissions,
-} = require("../../data/data.js");
+const { pages, globals, leadFormSubmissions } = require("../../data/data.js");
 
 async function isFirstRun() {
   const pluginStore = strapi.store({
@@ -128,9 +124,8 @@ async function importPages(pages) {
           }
         };
         section.features.forEach((feature, featureIndex) => {
-          files[
-            `contentSections.${index}.features.${featureIndex}.media`
-          ] = getFeatureMedia(featureIndex);
+          files[`contentSections.${index}.features.${featureIndex}.media`] =
+            getFeatureMedia(featureIndex);
         });
       } else if (section.__component === "sections.feature-columns-group") {
         const getFeatureMedia = (featureIndex) => {
@@ -146,15 +141,13 @@ async function importPages(pages) {
           }
         };
         section.features.forEach((feature, featureIndex) => {
-          files[
-            `contentSections.${index}.features.${featureIndex}.icon`
-          ] = getFeatureMedia(featureIndex);
+          files[`contentSections.${index}.features.${featureIndex}.icon`] =
+            getFeatureMedia(featureIndex);
         });
       } else if (section.__component === "sections.testimonials-group") {
         section.logos.forEach((logo, logoIndex) => {
-          files[
-            `contentSections.${index}.logos.${logoIndex}.logo`
-          ] = getFileData("logo.png");
+          files[`contentSections.${index}.logos.${logoIndex}.logo`] =
+            getFileData("logo.png");
         });
         section.testimonials.forEach((testimonial, testimonialIndex) => {
           files[
@@ -183,7 +176,7 @@ async function importGlobal() {
   // Create entry
   globals.forEach(async (locale) => {
     await createEntry("global", locale, files);
-  })
+  });
 }
 
 async function importLeadFormSubmissionData() {
@@ -200,13 +193,11 @@ async function importSeedData() {
     "lead-form-submissions": ["create"],
   });
 
-
   await strapi.query("locale", "i18n").create({
-    name: "French (fr)",
-    code: "fr",
+    name: "German (de)",
+    code: "de",
   });
 
-  
   // Create all entries
   await importGlobal();
   await importPages(pages);

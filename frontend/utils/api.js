@@ -16,11 +16,12 @@ export async function fetchAPI(path, options = {}) {
     ...options,
   }
   const requestUrl = getStrapiURL(path)
+  console.log('Requested URL: ', requestUrl)
   const response = await fetch(requestUrl, mergedOptions)
 
   if (!response.ok) {
     console.error(response.statusText)
-    throw new Error(`An error occured please try again`)
+    throw new Error(`An error occured please try again. ${response.statusText}`)
   }
   const data = await response.json()
   return data
@@ -35,11 +36,7 @@ export async function fetchAPI(path, options = {}) {
 export async function getPageData(params, locale, preview) {
   const slug = params.slug.join('/')
   // Find the pages that match this slug
-  const pagesData = await fetchAPI(
-    `/pages?slug=${slug}&_locale=${locale}&status=published${
-      preview ? '&status=draft' : ''
-    }`
-  )
+  const pagesData = await fetchAPI(`/pages?slug=${slug}&_locale=${locale}`)
 
   // Make sure we found something, otherwise return null
   if (pagesData == null || pagesData.length === 0) {

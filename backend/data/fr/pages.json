@@ -3,7 +3,7 @@
     {
       "id": 5,
       "slug": "",
-      "locale": "fr",
+      "locale": "de",
       "localizations": [
         {
           "id": 1,
@@ -155,7 +155,7 @@
     {
       "id": 6,
       "slug": "pricing",
-      "locale": "fr",
+      "locale": "de",
       "localizations": [
         {
           "id": 2,
@@ -237,7 +237,7 @@
     {
       "id": 7,
       "slug": "secret",
-      "locale": "fr",
+      "locale": "de",
       "localizations": [
         {
           "id": 3,
@@ -263,7 +263,7 @@
     {
       "id": 8,
       "slug": "contact",
-      "locale": "fr",
+      "locale": "de",
       "localizations": [
         {
           "id": 4,
