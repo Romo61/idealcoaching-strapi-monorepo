@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "develop:backend": "railway run yarn --cwd backend develop",
+    "predev": "docker-compose up -d --build",
+    "develop:backend": "yarn --cwd backend develop",
     "develop:frontend": "wait-on http://localhost:1337/admin && yarn --cwd frontend develop",
     "dev": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
     "tokei": "tokei ./backend ./frontend --sort code --output yaml > tokei.yml"
