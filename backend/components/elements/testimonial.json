@@ -12,7 +12,7 @@
       "via": "related",
       "allowedTypes": ["images"],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "picture": {
@@ -20,7 +20,7 @@
       "via": "related",
       "allowedTypes": ["images"],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "text": {

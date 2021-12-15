@@ -9,7 +9,7 @@ interface CustomImageProps {
 }
 
 const NextImage = ({ media, ...props }: CustomImageProps) => {
-  const fullUrl = getStrapiMedia(media?.url)
+  const fullUrl = getStrapiMedia(media.url)
 
   return (
     <div>
