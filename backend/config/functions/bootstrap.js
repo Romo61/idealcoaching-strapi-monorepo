@@ -193,11 +193,6 @@ async function importSeedData() {
     "lead-form-submissions": ["create"],
   });
 
-  /*   await strapi.query("locale", "i18n").create({
-    name: "French (fr)",
-    code: "fr",
-  }); */
-
   // Create all entries
   await importGlobal();
   await importPages(pages);
