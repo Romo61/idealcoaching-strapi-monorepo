@@ -16,11 +16,11 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const queryClient = new QueryClient()
 
-  /* const router = useRouter()
+  const router = useRouter()
 
   if (router.asPath === '/[[...slug]]') {
     return null
-  } */
+  }
 
   // Extract the data we need
   const { global } = pageProps
@@ -30,7 +30,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
   const { metadata } = global
 
-  const shareImages: IMedia = metadata.shareImage.formats
+  const shareImages: IMedia = metadata.shareImage
   return (
     <>
       {/* Favicon */}
@@ -44,13 +44,15 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         title="Page"
         description={metadata.metaDescription}
         openGraph={{
-          images: Object.values(shareImages).map((image) => {
+          url: getStrapiMedia(shareImages.url),
+
+          /* images: Object.values(shareImages).map((image) => {
             return {
               url: getStrapiMedia(image.url),
               width: image.width,
               height: image.height,
             }
-          }),
+          }), */
         }}
         twitter={{
           cardType: metadata.twitterCardType,
@@ -58,6 +60,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         }}
       />
       {/* Display the content */}
+
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
         <ReactQueryDevtools initialIsOpen={false} />
