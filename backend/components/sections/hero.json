@@ -20,7 +20,7 @@
       "via": "related",
       "allowedTypes": ["images"],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "smallTextWithLink": {
       "type": "richtext"
