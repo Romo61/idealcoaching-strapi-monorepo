@@ -8,7 +8,7 @@ import * as React from 'react'
 
 const MarkdownRender = ({ children }) => {
   const customRender = {
-    link: ({ href, children, title, ...props }) => {
+    a: ({ href, children, title, ...props }) => {
       if (href.startsWith('#')) {
         return (
           <Link href={href} title={title}>
@@ -31,7 +31,75 @@ const MarkdownRender = ({ children }) => {
       )
     },
 
-    heading: ({ node, level, ...props }) => {
+    h1: ({ node, ...props }) => {
+      console.log('h1 md', node)
+      return (
+        <h1
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+    h2: ({ node, ...props }) => {
+      return (
+        <h2
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+    h3: ({ node, ...props }) => {
+      return (
+        <h3
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+    h4: ({ node, ...props }) => {
+      return (
+        <h4
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+    h5: ({ node, ...props }) => {
+      return (
+        <h5
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+    h6: ({ node, ...props }) => {
+      return (
+        <h6
+          {...props}
+          id={slugify(`${node?.children[0]?.value}`, {
+            lower: true,
+            locale: 'de',
+          })}
+        />
+      )
+    },
+
+    /*  heading: ({ node, level, ...props }) => {
       switch (level) {
         case 1:
           return (
@@ -97,7 +165,7 @@ const MarkdownRender = ({ children }) => {
         default:
           break
       }
-    },
+    }, */
   }
 
   return (
@@ -105,7 +173,7 @@ const MarkdownRender = ({ children }) => {
       <ReactMarkdown
         className="mx-auto break-words prose prose-xl"
         skipHtml={true}
-        renderers={customRender}
+        components={customRender}
       >
         {children}
       </ReactMarkdown>
