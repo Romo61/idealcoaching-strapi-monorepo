@@ -1,4 +1,5 @@
-import ErrorPage from 'next/error'
+import Error from './_error'
+
 import { getPageData, fetchAPI, getGlobalData } from 'utils/api'
 import Sections from '@/components/sections'
 import Seo from '@/components/elements/seo'
@@ -60,7 +61,11 @@ const DynamicPage = ({ sections, metadata, preview, global, pageContext }) => {
 
   // Check if the required data was provided
   if (!router.isFallback && !sections?.length) {
-    return <ErrorPage statusCode={404} />
+    return (
+      <>
+        <Error statusCode={404} />
+      </>
+    )
   }
 
   // Loading screen (only possible in preview mode)

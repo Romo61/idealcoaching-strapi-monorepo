@@ -3,13 +3,8 @@
     {
       "id": 1,
       "slug": "",
-      "locale": "en",
-      "localizations": [
-        {
-          "id": 5,
-          "locale": "fr"
-        }
-      ],
+      "locale": "de",
+
       "shortName": "Home",
       "status": "draft",
       "metadata": {
@@ -168,13 +163,8 @@
     {
       "id": 2,
       "slug": "pricing",
-      "locale": "en",
-      "localizations": [
-        {
-          "id": 6,
-          "locale": "fr"
-        }
-      ],
+      "locale": "de",
+
       "shortName": "Pricing",
       "status": "draft",
       "metadata": {
@@ -250,13 +240,8 @@
     {
       "id": 3,
       "slug": "secret",
-      "locale": "en",
-      "localizations": [
-        {
-          "id": 7,
-          "locale": "fr"
-        }
-      ],
+      "locale": "de",
+
       "shortName": "Secret",
       "status": "draft",
       "metadata": {
