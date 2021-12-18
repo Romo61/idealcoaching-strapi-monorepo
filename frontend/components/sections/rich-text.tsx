@@ -6,7 +6,7 @@ type RichTextProps = {
 }
 const RichText: React.FC<RichTextProps> = ({ data }) => {
   return (
-    <div className="container py-12 prose prose-lg">
+    <div className="container py-12 prose prose-lg selection:bg-primary-300 selection:text-primary-900">
       <Markdown>{data.content}</Markdown>
     </div>
   )
