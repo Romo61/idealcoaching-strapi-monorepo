@@ -61,7 +61,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
   return (
     <>
       {/* The actual navbar */}
-      <nav className="py-6 border-b-2 border-gray-200 sm:py-2">
+      <nav data-cy="navbar" className="py-6 border-b-2 border-gray-200 sm:py-2">
         <div className="container flex flex-row justify-between items-center">
           {/* Content aligned to the left */}
           <div className="flex flex-row items-center">

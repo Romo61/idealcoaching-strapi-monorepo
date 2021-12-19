@@ -13,7 +13,7 @@ type FooterProps = {
 }
 const Footer: React.FC<FooterProps> = ({ footer }) => {
   return (
-    <footer className="pt-12 bg-gray-100">
+    <footer data-cy="footer" className="pt-12 bg-gray-100">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div>
           {footer.logo && (
