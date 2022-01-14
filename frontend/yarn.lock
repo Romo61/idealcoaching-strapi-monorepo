@@ -4516,10 +4516,10 @@ react-markdown@^7.1.1:
     unist-util-visit "^4.0.0"
     vfile "^5.0.0"
 
-react-query@^3.34.5:
-  version "3.34.5"
-  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.34.5.tgz#a145c02f58088c5c83c91697cece50e89b4dbfd8"
-  integrity sha512-qk1hYo+y90LGY5W4kNEYT5yCk8gyL1fVTMoRZfzBTaSdaZWOcdvij36MmkhIqiPdXoEt5pBvX2ejokazwq8haw==
+react-query@^3.34.6:
+  version "3.34.8"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.34.8.tgz#a3be8523fd95f766b04c32847a1b58d8231db03c"
+  integrity sha512-pl9e2VmVbgKf29Qn/WpmFVtB2g17JPqLLyOQg3GfSs/S2WABvip5xlT464vfXtilLPcJVg9bEHHlqmC38/nvDw==
   dependencies:
     "@babel/runtime" "^7.5.5"
     broadcast-channel "^3.4.1"
