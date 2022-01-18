@@ -2,17 +2,49 @@
   "name": "strapi-monorepo",
   "private": true,
   "version": "0.3.1",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          ".next/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
   "scripts": {
     "predev": "docker-compose up -d --build",
     "develop:backend": "yarn --cwd backend develop",
     "develop:frontend": "wait-on http://localhost:1337/admin && yarn --cwd frontend develop",
-    "dev": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
+    "dev": "turbo run dev --parallel --no-cache",
+    "dev:old": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
+    "build": "yarn turbo run build",
     "tokei": "tokei ./backend ./frontend --sort code --output yaml > tokei.yml"
   },
   "devDependencies": {
     "cross-env": "7.0.3",
     "is-ci": "^3.0.1",
     "npm-run-all": "4.1.5",
+    "turbo": "^1.0.28",
     "wait-on": "6.0.0"
   }
 }
