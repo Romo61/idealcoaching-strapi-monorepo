@@ -8,6 +8,7 @@
     "develop:frontend": "wait-on http://localhost:1337/admin && yarn --cwd frontend develop",
     "dev": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
     "tokei": "tokei ./backend ./frontend --sort code --output yaml > tokei.yml",
+    "tokei:chart": "tokei ./backend ./frontend --sort code --output json | tokei-pie",
     "prepare": "is-ci || husky install"
   },
   "devDependencies": {
