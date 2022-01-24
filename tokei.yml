@@ -19,65 +19,11 @@ JSON:
   comments: 0
   inaccurate: false
   reports:
-    - name: "./backend/api/global/config/routes.json"
+    - name: "./backend/components/sections/feature-rows-group.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 28
-        comments: 0
-    - name: "./backend/api/global/models/global.settings.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 81
-        comments: 0
-    - name: "./backend/api/dynamic-rich-text/models/dynamic-rich-text.settings.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 28
-        comments: 0
-    - name: "./backend/api/dynamic-rich-text/config/routes.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 52
-        comments: 0
-    - name: "./backend/api/lead-form-submissions/models/lead-form-submissions.settings.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 35
-        comments: 0
-    - name: "./backend/api/lead-form-submissions/config/routes.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 52
-        comments: 0
-    - name: "./backend/api/page/models/page.settings.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 75
-        comments: 0
-    - name: "./backend/api/page/config/routes.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 52
-        comments: 0
-    - name: "./backend/components/elements/level-row.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 23
-        comments: 0
-    - name: "./backend/components/meta/metadata.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 71
+        code: 15
         comments: 0
     - name: "./backend/components/sections/dynamic-content.json"
       stats:
@@ -85,65 +31,17 @@ JSON:
         blobs: {}
         code: 20
         comments: 0
-    - name: "./backend/components/elements/footer-section.json"
+    - name: "./backend/components/sections/pricing.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 19
+        code: 18
         comments: 0
-    - name: "./backend/components/elements/logos.json"
+    - name: "./backend/components/meta/metadata.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 20
-        comments: 0
-    - name: "./backend/components/elements/feature-column.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 27
-        comments: 0
-    - name: "./backend/components/sections/feature-rows-group.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 15
-        comments: 0
-    - name: "./backend/components/elements/plan.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 30
-        comments: 0
-    - name: "./backend/components/elements/feature.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 13
-        comments: 0
-    - name: "./backend/components/elements/checkbox-row.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 20
-        comments: 0
-    - name: "./backend/components/elements/seminar-card.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 45
-        comments: 0
-    - name: "./backend/components/elements/page-selector.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 19
-        comments: 0
-    - name: "./backend/components/elements/notification-banner.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 19
+        code: 71
         comments: 0
     - name: "./backend/components/elements/feature-row.json"
       stats:
@@ -157,23 +55,29 @@ JSON:
         blobs: {}
         code: 41
         comments: 0
+    - name: "./backend/components/sections/rich-text.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 13
+        comments: 0
+    - name: "./backend/components/elements/notification-banner.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 19
+        comments: 0
+    - name: "./backend/components/sections/large-video.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 34
+        comments: 0
     - name: "./backend/components/elements/menu-sections.json"
       stats:
         blanks: 0
         blobs: {}
         code: 33
-        comments: 0
-    - name: "./backend/components/links/button-link.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 28
-        comments: 0
-    - name: "./backend/components/sections/heading.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 41
         comments: 0
     - name: "./backend/components/sections/lead-form.json"
       stats:
@@ -181,17 +85,17 @@ JSON:
         blobs: {}
         code: 54
         comments: 0
+    - name: "./backend/components/sections/heading.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 41
+        comments: 0
     - name: "./backend/components/sections/level-model.json"
       stats:
         blanks: 0
         blobs: {}
         code: 21
-        comments: 0
-    - name: "./backend/components/links/link.json"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 27
         comments: 0
     - name: "./backend/components/sections/dangerous-html.json"
       stats:
@@ -199,11 +103,11 @@ JSON:
         blobs: {}
         code: 14
         comments: 0
-    - name: "./backend/components/links/button.json"
+    - name: "./backend/components/sections/seminar-group.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 21
+        code: 20
         comments: 0
     - name: "./backend/components/sections/image.json"
       stats:
@@ -223,11 +127,17 @@ JSON:
         blobs: {}
         code: 34
         comments: 0
-    - name: "./backend/components/sections/seminar-group.json"
+    - name: "./backend/components/sections/gradient-hero.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 20
+        code: 19
+        comments: 0
+    - name: "./backend/components/elements/page-selector.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 19
         comments: 0
     - name: "./backend/components/sections/testimonials-group.json"
       stats:
@@ -241,29 +151,101 @@ JSON:
         blobs: {}
         code: 18
         comments: 0
-    - name: "./backend/components/sections/gradient-hero.json"
+    - name: "./backend/components/elements/level-row.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 23
+        comments: 0
+    - name: "./backend/components/elements/footer-section.json"
       stats:
         blanks: 0
         blobs: {}
         code: 19
         comments: 0
-    - name: "./backend/components/sections/large-video.json"
+    - name: "./backend/components/elements/logos.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 34
+        code: 20
         comments: 0
-    - name: "./backend/components/sections/pricing.json"
+    - name: "./backend/components/elements/feature-column.json"
       stats:
         blanks: 0
         blobs: {}
-        code: 18
+        code: 27
         comments: 0
-    - name: "./backend/components/sections/rich-text.json"
+    - name: "./backend/components/elements/plan.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 30
+        comments: 0
+    - name: "./backend/components/elements/seminar-card.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 45
+        comments: 0
+    - name: "./backend/components/elements/checkbox-row.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 20
+        comments: 0
+    - name: "./backend/components/elements/feature.json"
       stats:
         blanks: 0
         blobs: {}
         code: 13
+        comments: 0
+    - name: "./backend/api/global/models/global.settings.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 81
+        comments: 0
+    - name: "./backend/api/global/config/routes.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 28
+        comments: 0
+    - name: "./backend/api/dynamic-rich-text/config/routes.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 52
+        comments: 0
+    - name: "./backend/api/dynamic-rich-text/models/dynamic-rich-text.settings.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 28
+        comments: 0
+    - name: "./backend/components/links/button-link.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 28
+        comments: 0
+    - name: "./backend/components/links/link.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 27
+        comments: 0
+    - name: "./backend/components/links/button.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 21
+        comments: 0
+    - name: "./backend/api/lead-form-submissions/config/routes.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 52
         comments: 0
     - name: "./backend/components/layout/footer.json"
       stats:
@@ -276,6 +258,24 @@ JSON:
         blanks: 0
         blobs: {}
         code: 35
+        comments: 0
+    - name: "./backend/api/lead-form-submissions/models/lead-form-submissions.settings.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 35
+        comments: 0
+    - name: "./backend/api/page/models/page.settings.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 75
+        comments: 0
+    - name: "./backend/api/page/config/routes.json"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 52
         comments: 0
     - name: "./backend/package.json"
       stats:
@@ -351,6 +351,12 @@ JavaScript:
         blobs: {}
         code: 24
         comments: 2
+    - name: "./backend/api/global/services/global.js"
+      stats:
+        blanks: 2
+        blobs: {}
+        code: 2
+        comments: 4
     - name: "./backend/api/global/controllers/global.js"
       stats:
         blanks: 2
@@ -363,7 +369,7 @@ JavaScript:
         blobs: {}
         code: 2
         comments: 4
-    - name: "./backend/api/global/services/global.js"
+    - name: "./backend/api/dynamic-rich-text/services/dynamic-rich-text.js"
       stats:
         blanks: 2
         blobs: {}
@@ -381,13 +387,13 @@ JavaScript:
         blobs: {}
         code: 2
         comments: 4
-    - name: "./backend/api/dynamic-rich-text/services/dynamic-rich-text.js"
+    - name: "./backend/api/lead-form-submissions/controllers/lead-form-submissions.js"
       stats:
         blanks: 2
         blobs: {}
         code: 2
         comments: 4
-    - name: "./backend/api/lead-form-submissions/controllers/lead-form-submissions.js"
+    - name: "./backend/api/lead-form-submissions/services/lead-form-submissions.js"
       stats:
         blanks: 2
         blobs: {}
@@ -399,12 +405,6 @@ JavaScript:
         blobs: {}
         code: 13
         comments: 5
-    - name: "./backend/api/lead-form-submissions/services/lead-form-submissions.js"
-      stats:
-        blanks: 2
-        blobs: {}
-        code: 2
-        comments: 4
     - name: "./backend/api/page/controllers/page.js"
       stats:
         blanks: 2
@@ -429,23 +429,35 @@ JavaScript:
         blobs: {}
         code: 4
         comments: 0
-    - name: "./backend/extensions/users-permissions/config/jwt.js"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 3
-        comments: 0
     - name: "./backend/config/functions/cron.js"
       stats:
         blanks: 2
         blobs: {}
         code: 3
         comments: 16
+    - name: "./backend/extensions/users-permissions/config/jwt.js"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 3
+        comments: 0
+    - name: "./backend/config/env/development/database.js"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 19
+        comments: 0
     - name: "./backend/data/data.js"
       stats:
         blanks: 2
         blobs: {}
         code: 7
+        comments: 0
+    - name: "./backend/config/env/development/middleware.js"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 1
         comments: 0
     - name: "./backend/config/env/development/plugins.js"
       stats:
@@ -459,36 +471,18 @@ JavaScript:
         blobs: {}
         code: 9
         comments: 0
-    - name: "./backend/config/env/development/middleware.js"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 1
-        comments: 0
-    - name: "./backend/config/env/development/database.js"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 19
-        comments: 0
-    - name: "./backend/data/de/index.js"
-      stats:
-        blanks: 1
-        blobs: {}
-        code: 6
-        comments: 0
-    - name: "./backend/config/env/production/plugins.js"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 23
-        comments: 2
     - name: "./backend/config/functions/bootstrap.js"
       stats:
         blanks: 19
         blobs: {}
         code: 186
         comments: 12
+    - name: "./backend/data/de/index.js"
+      stats:
+        blanks: 1
+        blobs: {}
+        code: 6
+        comments: 0
     - name: "./backend/config/env/production/server.js"
       stats:
         blanks: 0
@@ -507,6 +501,12 @@ JavaScript:
         blobs: {}
         code: 1
         comments: 0
+    - name: "./backend/config/env/production/plugins.js"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 23
+        comments: 2
     - name: "./frontend/components/icons/world.js"
       stats:
         blanks: 2
@@ -667,18 +667,18 @@ TSX:
         blobs: {}
         code: 73
         comments: 5
-    - name: "./frontend/components/elements/image.tsx"
-      stats:
-        blanks: 4
-        blobs: {}
-        code: 25
-        comments: 26
     - name: "./frontend/components/elements/video.tsx"
       stats:
         blanks: 4
         blobs: {}
         code: 29
         comments: 0
+    - name: "./frontend/components/elements/image.tsx"
+      stats:
+        blanks: 4
+        blobs: {}
+        code: 25
+        comments: 26
     - name: "./frontend/components/elements/seo.tsx"
       stats:
         blanks: 3
@@ -703,35 +703,35 @@ TSX:
         blobs: {}
         code: 35
         comments: 0
-    - name: "./frontend/components/elements/custom-link.tsx"
-      stats:
-        blanks: 4
-        blobs: {}
-        code: 38
-        comments: 2
     - name: "./frontend/components/elements/button.tsx"
       stats:
         blanks: 1
         blobs: {}
         code: 53
         comments: 7
+    - name: "./frontend/components/elements/custom-link.tsx"
+      stats:
+        blanks: 4
+        blobs: {}
+        code: 38
+        comments: 2
     - name: "./frontend/components/elements/custom-button.tsx"
       stats:
         blanks: 2
         blobs: {}
         code: 13
         comments: 0
-    - name: "./frontend/components/elements/footer.tsx"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 54
-        comments: 0
     - name: "./frontend/components/elements/loader.tsx"
       stats:
         blanks: 0
         blobs: {}
         code: 27
+        comments: 0
+    - name: "./frontend/components/elements/footer.tsx"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 54
         comments: 0
     - name: "./frontend/components/elements/cover-image-comp.tsx"
       stats:
@@ -751,60 +751,6 @@ TSX:
         blobs: {}
         code: 189
         comments: 10
-    - name: "./frontend/components/sections/image-section.tsx"
-      stats:
-        blanks: 3
-        blobs: {}
-        code: 32
-        comments: 0
-    - name: "./frontend/components/sections/hero.tsx"
-      stats:
-        blanks: 5
-        blobs: {}
-        code: 31
-        comments: 0
-    - name: "./frontend/pages/404.tsx"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 38
-        comments: 0
-    - name: "./frontend/components/sections/rich-text.tsx"
-      stats:
-        blanks: 0
-        blobs: {}
-        code: 16
-        comments: 0
-    - name: "./frontend/components/sections/level-model.tsx"
-      stats:
-        blanks: 3
-        blobs: {}
-        code: 38
-        comments: 0
-    - name: "./frontend/pages/_app.tsx"
-      stats:
-        blanks: 13
-        blobs: {}
-        code: 64
-        comments: 13
-    - name: "./frontend/components/sections/gradient-hero.tsx"
-      stats:
-        blanks: 8
-        blobs: {}
-        code: 112
-        comments: 24
-    - name: "./frontend/components/sections/testimonials-group.tsx"
-      stats:
-        blanks: 3
-        blobs: {}
-        code: 78
-        comments: 2
-    - name: "./frontend/components/sections/feature-rows-group.tsx"
-      stats:
-        blanks: 2
-        blobs: {}
-        code: 53
-        comments: 1
     - name: "./frontend/components/sections/feature-columns-group.tsx"
       stats:
         blanks: 0
@@ -817,54 +763,108 @@ TSX:
         blobs: {}
         code: 19
         comments: 0
+    - name: "./frontend/pages/404.tsx"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 38
+        comments: 0
+    - name: "./frontend/components/sections/level-model.tsx"
+      stats:
+        blanks: 3
+        blobs: {}
+        code: 38
+        comments: 0
+    - name: "./frontend/components/sections/rich-text.tsx"
+      stats:
+        blanks: 0
+        blobs: {}
+        code: 16
+        comments: 0
+    - name: "./frontend/pages/_app.tsx"
+      stats:
+        blanks: 13
+        blobs: {}
+        code: 64
+        comments: 13
+    - name: "./frontend/components/sections/testimonials-group.tsx"
+      stats:
+        blanks: 3
+        blobs: {}
+        code: 78
+        comments: 2
+    - name: "./frontend/components/sections/feature-rows-group.tsx"
+      stats:
+        blanks: 2
+        blobs: {}
+        code: 53
+        comments: 1
     - name: "./frontend/components/sections/dangerous-html.tsx"
       stats:
         blanks: 3
         blobs: {}
         code: 20
         comments: 0
-    - name: "./frontend/components/sections/pricing.tsx"
-      stats:
-        blanks: 5
-        blobs: {}
-        code: 92
-        comments: 16
     - name: "./frontend/components/sections/custom-link.tsx"
       stats:
         blanks: 6
         blobs: {}
         code: 44
         comments: 8
-    - name: "./frontend/components/sections/lead-form.tsx"
+    - name: "./frontend/components/sections/pricing.tsx"
       stats:
-        blanks: 12
+        blanks: 5
         blobs: {}
-        code: 210
-        comments: 5
+        code: 92
+        comments: 16
     - name: "./frontend/pages/[[...slug]].tsx"
       stats:
         blanks: 23
         blobs: {}
         code: 118
         comments: 11
+    - name: "./frontend/components/sections/lead-form.tsx"
+      stats:
+        blanks: 12
+        blobs: {}
+        code: 210
+        comments: 5
     - name: "./frontend/pages/_document.tsx"
       stats:
         blanks: 5
         blobs: {}
         code: 28
         comments: 25
+    - name: "./frontend/components/sections/hero.tsx"
+      stats:
+        blanks: 5
+        blobs: {}
+        code: 31
+        comments: 0
     - name: "./frontend/pages/_error.tsx"
       stats:
         blanks: 6
         blobs: {}
         code: 47
         comments: 5
+    - name: "./frontend/components/sections/image-section.tsx"
+      stats:
+        blanks: 3
+        blobs: {}
+        code: 32
+        comments: 0
     - name: "./frontend/components/sections/dynamic-rich-text.tsx"
       stats:
         blanks: 14
         blobs: {}
         code: 162
         comments: 16
+    - name: "./frontend/components/sections/gradient-hero.tsx"
+      stats:
+        blanks: 8
+        blobs: {}
+        code: 112
+        comments: 24
 Total:
   blanks: 325
   children:
@@ -888,6 +888,12 @@ Total:
           blobs: {}
           code: 24
           comments: 2
+      - name: "./backend/api/global/services/global.js"
+        stats:
+          blanks: 2
+          blobs: {}
+          code: 2
+          comments: 4
       - name: "./backend/api/global/controllers/global.js"
         stats:
           blanks: 2
@@ -900,7 +906,7 @@ Total:
           blobs: {}
           code: 2
           comments: 4
-      - name: "./backend/api/global/services/global.js"
+      - name: "./backend/api/dynamic-rich-text/services/dynamic-rich-text.js"
         stats:
           blanks: 2
           blobs: {}
@@ -918,13 +924,13 @@ Total:
           blobs: {}
           code: 2
           comments: 4
-      - name: "./backend/api/dynamic-rich-text/services/dynamic-rich-text.js"
+      - name: "./backend/api/lead-form-submissions/controllers/lead-form-submissions.js"
         stats:
           blanks: 2
           blobs: {}
           code: 2
           comments: 4
-      - name: "./backend/api/lead-form-submissions/controllers/lead-form-submissions.js"
+      - name: "./backend/api/lead-form-submissions/services/lead-form-submissions.js"
         stats:
           blanks: 2
           blobs: {}
@@ -936,12 +942,6 @@ Total:
           blobs: {}
           code: 13
           comments: 5
-      - name: "./backend/api/lead-form-submissions/services/lead-form-submissions.js"
-        stats:
-          blanks: 2
-          blobs: {}
-          code: 2
-          comments: 4
       - name: "./backend/api/page/controllers/page.js"
         stats:
           blanks: 2
@@ -966,23 +966,35 @@ Total:
           blobs: {}
           code: 4
           comments: 0
-      - name: "./backend/extensions/users-permissions/config/jwt.js"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 3
-          comments: 0
       - name: "./backend/config/functions/cron.js"
         stats:
           blanks: 2
           blobs: {}
           code: 3
           comments: 16
+      - name: "./backend/extensions/users-permissions/config/jwt.js"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 3
+          comments: 0
+      - name: "./backend/config/env/development/database.js"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 19
+          comments: 0
       - name: "./backend/data/data.js"
         stats:
           blanks: 2
           blobs: {}
           code: 7
+          comments: 0
+      - name: "./backend/config/env/development/middleware.js"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 1
           comments: 0
       - name: "./backend/config/env/development/plugins.js"
         stats:
@@ -996,36 +1008,18 @@ Total:
           blobs: {}
           code: 9
           comments: 0
-      - name: "./backend/config/env/development/middleware.js"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 1
-          comments: 0
-      - name: "./backend/config/env/development/database.js"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 19
-          comments: 0
-      - name: "./backend/data/de/index.js"
-        stats:
-          blanks: 1
-          blobs: {}
-          code: 6
-          comments: 0
-      - name: "./backend/config/env/production/plugins.js"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 23
-          comments: 2
       - name: "./backend/config/functions/bootstrap.js"
         stats:
           blanks: 19
           blobs: {}
           code: 186
           comments: 12
+      - name: "./backend/data/de/index.js"
+        stats:
+          blanks: 1
+          blobs: {}
+          code: 6
+          comments: 0
       - name: "./backend/config/env/production/server.js"
         stats:
           blanks: 0
@@ -1044,6 +1038,12 @@ Total:
           blobs: {}
           code: 1
           comments: 0
+      - name: "./backend/config/env/production/plugins.js"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 23
+          comments: 2
       - name: "./frontend/components/icons/world.js"
         stats:
           blanks: 2
@@ -1081,65 +1081,11 @@ Total:
           code: 28
           comments: 0
     Json:
-      - name: "./backend/api/global/config/routes.json"
+      - name: "./backend/components/sections/feature-rows-group.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 28
-          comments: 0
-      - name: "./backend/api/global/models/global.settings.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 81
-          comments: 0
-      - name: "./backend/api/dynamic-rich-text/models/dynamic-rich-text.settings.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 28
-          comments: 0
-      - name: "./backend/api/dynamic-rich-text/config/routes.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 52
-          comments: 0
-      - name: "./backend/api/lead-form-submissions/models/lead-form-submissions.settings.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 35
-          comments: 0
-      - name: "./backend/api/lead-form-submissions/config/routes.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 52
-          comments: 0
-      - name: "./backend/api/page/models/page.settings.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 75
-          comments: 0
-      - name: "./backend/api/page/config/routes.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 52
-          comments: 0
-      - name: "./backend/components/elements/level-row.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 23
-          comments: 0
-      - name: "./backend/components/meta/metadata.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 71
+          code: 15
           comments: 0
       - name: "./backend/components/sections/dynamic-content.json"
         stats:
@@ -1147,65 +1093,17 @@ Total:
           blobs: {}
           code: 20
           comments: 0
-      - name: "./backend/components/elements/footer-section.json"
+      - name: "./backend/components/sections/pricing.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 19
+          code: 18
           comments: 0
-      - name: "./backend/components/elements/logos.json"
+      - name: "./backend/components/meta/metadata.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 20
-          comments: 0
-      - name: "./backend/components/elements/feature-column.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 27
-          comments: 0
-      - name: "./backend/components/sections/feature-rows-group.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 15
-          comments: 0
-      - name: "./backend/components/elements/plan.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 30
-          comments: 0
-      - name: "./backend/components/elements/feature.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 13
-          comments: 0
-      - name: "./backend/components/elements/checkbox-row.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 20
-          comments: 0
-      - name: "./backend/components/elements/seminar-card.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 45
-          comments: 0
-      - name: "./backend/components/elements/page-selector.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 19
-          comments: 0
-      - name: "./backend/components/elements/notification-banner.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 19
+          code: 71
           comments: 0
       - name: "./backend/components/elements/feature-row.json"
         stats:
@@ -1219,23 +1117,29 @@ Total:
           blobs: {}
           code: 41
           comments: 0
+      - name: "./backend/components/sections/rich-text.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 13
+          comments: 0
+      - name: "./backend/components/elements/notification-banner.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 19
+          comments: 0
+      - name: "./backend/components/sections/large-video.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 34
+          comments: 0
       - name: "./backend/components/elements/menu-sections.json"
         stats:
           blanks: 0
           blobs: {}
           code: 33
-          comments: 0
-      - name: "./backend/components/links/button-link.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 28
-          comments: 0
-      - name: "./backend/components/sections/heading.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 41
           comments: 0
       - name: "./backend/components/sections/lead-form.json"
         stats:
@@ -1243,17 +1147,17 @@ Total:
           blobs: {}
           code: 54
           comments: 0
+      - name: "./backend/components/sections/heading.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 41
+          comments: 0
       - name: "./backend/components/sections/level-model.json"
         stats:
           blanks: 0
           blobs: {}
           code: 21
-          comments: 0
-      - name: "./backend/components/links/link.json"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 27
           comments: 0
       - name: "./backend/components/sections/dangerous-html.json"
         stats:
@@ -1261,11 +1165,11 @@ Total:
           blobs: {}
           code: 14
           comments: 0
-      - name: "./backend/components/links/button.json"
+      - name: "./backend/components/sections/seminar-group.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 21
+          code: 20
           comments: 0
       - name: "./backend/components/sections/image.json"
         stats:
@@ -1285,11 +1189,17 @@ Total:
           blobs: {}
           code: 34
           comments: 0
-      - name: "./backend/components/sections/seminar-group.json"
+      - name: "./backend/components/sections/gradient-hero.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 20
+          code: 19
+          comments: 0
+      - name: "./backend/components/elements/page-selector.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 19
           comments: 0
       - name: "./backend/components/sections/testimonials-group.json"
         stats:
@@ -1303,29 +1213,101 @@ Total:
           blobs: {}
           code: 18
           comments: 0
-      - name: "./backend/components/sections/gradient-hero.json"
+      - name: "./backend/components/elements/level-row.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 23
+          comments: 0
+      - name: "./backend/components/elements/footer-section.json"
         stats:
           blanks: 0
           blobs: {}
           code: 19
           comments: 0
-      - name: "./backend/components/sections/large-video.json"
+      - name: "./backend/components/elements/logos.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 34
+          code: 20
           comments: 0
-      - name: "./backend/components/sections/pricing.json"
+      - name: "./backend/components/elements/feature-column.json"
         stats:
           blanks: 0
           blobs: {}
-          code: 18
+          code: 27
           comments: 0
-      - name: "./backend/components/sections/rich-text.json"
+      - name: "./backend/components/elements/plan.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 30
+          comments: 0
+      - name: "./backend/components/elements/seminar-card.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 45
+          comments: 0
+      - name: "./backend/components/elements/checkbox-row.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 20
+          comments: 0
+      - name: "./backend/components/elements/feature.json"
         stats:
           blanks: 0
           blobs: {}
           code: 13
+          comments: 0
+      - name: "./backend/api/global/models/global.settings.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 81
+          comments: 0
+      - name: "./backend/api/global/config/routes.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 28
+          comments: 0
+      - name: "./backend/api/dynamic-rich-text/config/routes.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 52
+          comments: 0
+      - name: "./backend/api/dynamic-rich-text/models/dynamic-rich-text.settings.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 28
+          comments: 0
+      - name: "./backend/components/links/button-link.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 28
+          comments: 0
+      - name: "./backend/components/links/link.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 27
+          comments: 0
+      - name: "./backend/components/links/button.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 21
+          comments: 0
+      - name: "./backend/api/lead-form-submissions/config/routes.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 52
           comments: 0
       - name: "./backend/components/layout/footer.json"
         stats:
@@ -1338,6 +1320,24 @@ Total:
           blanks: 0
           blobs: {}
           code: 35
+          comments: 0
+      - name: "./backend/api/lead-form-submissions/models/lead-form-submissions.settings.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 35
+          comments: 0
+      - name: "./backend/api/page/models/page.settings.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 75
+          comments: 0
+      - name: "./backend/api/page/config/routes.json"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 52
           comments: 0
       - name: "./backend/package.json"
         stats:
@@ -1488,18 +1488,18 @@ Total:
           blobs: {}
           code: 73
           comments: 5
-      - name: "./frontend/components/elements/image.tsx"
-        stats:
-          blanks: 4
-          blobs: {}
-          code: 25
-          comments: 26
       - name: "./frontend/components/elements/video.tsx"
         stats:
           blanks: 4
           blobs: {}
           code: 29
           comments: 0
+      - name: "./frontend/components/elements/image.tsx"
+        stats:
+          blanks: 4
+          blobs: {}
+          code: 25
+          comments: 26
       - name: "./frontend/components/elements/seo.tsx"
         stats:
           blanks: 3
@@ -1524,35 +1524,35 @@ Total:
           blobs: {}
           code: 35
           comments: 0
-      - name: "./frontend/components/elements/custom-link.tsx"
-        stats:
-          blanks: 4
-          blobs: {}
-          code: 38
-          comments: 2
       - name: "./frontend/components/elements/button.tsx"
         stats:
           blanks: 1
           blobs: {}
           code: 53
           comments: 7
+      - name: "./frontend/components/elements/custom-link.tsx"
+        stats:
+          blanks: 4
+          blobs: {}
+          code: 38
+          comments: 2
       - name: "./frontend/components/elements/custom-button.tsx"
         stats:
           blanks: 2
           blobs: {}
           code: 13
           comments: 0
-      - name: "./frontend/components/elements/footer.tsx"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 54
-          comments: 0
       - name: "./frontend/components/elements/loader.tsx"
         stats:
           blanks: 0
           blobs: {}
           code: 27
+          comments: 0
+      - name: "./frontend/components/elements/footer.tsx"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 54
           comments: 0
       - name: "./frontend/components/elements/cover-image-comp.tsx"
         stats:
@@ -1572,60 +1572,6 @@ Total:
           blobs: {}
           code: 189
           comments: 10
-      - name: "./frontend/components/sections/image-section.tsx"
-        stats:
-          blanks: 3
-          blobs: {}
-          code: 32
-          comments: 0
-      - name: "./frontend/components/sections/hero.tsx"
-        stats:
-          blanks: 5
-          blobs: {}
-          code: 31
-          comments: 0
-      - name: "./frontend/pages/404.tsx"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 38
-          comments: 0
-      - name: "./frontend/components/sections/rich-text.tsx"
-        stats:
-          blanks: 0
-          blobs: {}
-          code: 16
-          comments: 0
-      - name: "./frontend/components/sections/level-model.tsx"
-        stats:
-          blanks: 3
-          blobs: {}
-          code: 38
-          comments: 0
-      - name: "./frontend/pages/_app.tsx"
-        stats:
-          blanks: 13
-          blobs: {}
-          code: 64
-          comments: 13
-      - name: "./frontend/components/sections/gradient-hero.tsx"
-        stats:
-          blanks: 8
-          blobs: {}
-          code: 112
-          comments: 24
-      - name: "./frontend/components/sections/testimonials-group.tsx"
-        stats:
-          blanks: 3
-          blobs: {}
-          code: 78
-          comments: 2
-      - name: "./frontend/components/sections/feature-rows-group.tsx"
-        stats:
-          blanks: 2
-          blobs: {}
-          code: 53
-          comments: 1
       - name: "./frontend/components/sections/feature-columns-group.tsx"
         stats:
           blanks: 0
@@ -1638,54 +1584,108 @@ Total:
           blobs: {}
           code: 19
           comments: 0
+      - name: "./frontend/pages/404.tsx"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 38
+          comments: 0
+      - name: "./frontend/components/sections/level-model.tsx"
+        stats:
+          blanks: 3
+          blobs: {}
+          code: 38
+          comments: 0
+      - name: "./frontend/components/sections/rich-text.tsx"
+        stats:
+          blanks: 0
+          blobs: {}
+          code: 16
+          comments: 0
+      - name: "./frontend/pages/_app.tsx"
+        stats:
+          blanks: 13
+          blobs: {}
+          code: 64
+          comments: 13
+      - name: "./frontend/components/sections/testimonials-group.tsx"
+        stats:
+          blanks: 3
+          blobs: {}
+          code: 78
+          comments: 2
+      - name: "./frontend/components/sections/feature-rows-group.tsx"
+        stats:
+          blanks: 2
+          blobs: {}
+          code: 53
+          comments: 1
       - name: "./frontend/components/sections/dangerous-html.tsx"
         stats:
           blanks: 3
           blobs: {}
           code: 20
           comments: 0
-      - name: "./frontend/components/sections/pricing.tsx"
-        stats:
-          blanks: 5
-          blobs: {}
-          code: 92
-          comments: 16
       - name: "./frontend/components/sections/custom-link.tsx"
         stats:
           blanks: 6
           blobs: {}
           code: 44
           comments: 8
-      - name: "./frontend/components/sections/lead-form.tsx"
+      - name: "./frontend/components/sections/pricing.tsx"
         stats:
-          blanks: 12
+          blanks: 5
           blobs: {}
-          code: 210
-          comments: 5
+          code: 92
+          comments: 16
       - name: "./frontend/pages/[[...slug]].tsx"
         stats:
           blanks: 23
           blobs: {}
           code: 118
           comments: 11
+      - name: "./frontend/components/sections/lead-form.tsx"
+        stats:
+          blanks: 12
+          blobs: {}
+          code: 210
+          comments: 5
       - name: "./frontend/pages/_document.tsx"
         stats:
           blanks: 5
           blobs: {}
           code: 28
           comments: 25
+      - name: "./frontend/components/sections/hero.tsx"
+        stats:
+          blanks: 5
+          blobs: {}
+          code: 31
+          comments: 0
       - name: "./frontend/pages/_error.tsx"
         stats:
           blanks: 6
           blobs: {}
           code: 47
           comments: 5
+      - name: "./frontend/components/sections/image-section.tsx"
+        stats:
+          blanks: 3
+          blobs: {}
+          code: 32
+          comments: 0
       - name: "./frontend/components/sections/dynamic-rich-text.tsx"
         stats:
           blanks: 14
           blobs: {}
           code: 162
           comments: 16
+      - name: "./frontend/components/sections/gradient-hero.tsx"
+        stats:
+          blanks: 8
+          blobs: {}
+          code: 112
+          comments: 24
     TypeScript:
       - name: "./frontend/next-env.d.ts"
         stats:
@@ -1717,18 +1717,18 @@ Total:
           blobs: {}
           code: 31
           comments: 0
-      - name: "./frontend/pages/api/exit-preview.ts"
-        stats:
-          blanks: 2
-          blobs: {}
-          code: 5
-          comments: 3
       - name: "./frontend/pages/api/preview.ts"
         stats:
           blanks: 7
           blobs: {}
           code: 15
           comments: 12
+      - name: "./frontend/pages/api/exit-preview.ts"
+        stats:
+          blanks: 2
+          blobs: {}
+          code: 5
+          comments: 3
   code: 5119
   comments: 439
   inaccurate: false
@@ -1770,15 +1770,15 @@ TypeScript:
         blobs: {}
         code: 31
         comments: 0
-    - name: "./frontend/pages/api/exit-preview.ts"
-      stats:
-        blanks: 2
-        blobs: {}
-        code: 5
-        comments: 3
     - name: "./frontend/pages/api/preview.ts"
       stats:
         blanks: 7
         blobs: {}
         code: 15
         comments: 12
+    - name: "./frontend/pages/api/exit-preview.ts"
+      stats:
+        blanks: 2
+        blobs: {}
+        code: 5
+        comments: 3
