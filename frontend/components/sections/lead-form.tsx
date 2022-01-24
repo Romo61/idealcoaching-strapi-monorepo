@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import slugify from 'slugify'
 
 const CheckboxComponent = ({ data }) => {
-  if (data.length < 0)
+  if (data.length > 0)
     return (
       <div>
         <label
