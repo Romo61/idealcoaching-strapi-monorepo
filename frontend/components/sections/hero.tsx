@@ -4,7 +4,10 @@ import ButtonLink from '../elements/button-link'
 import NextImage from '../elements/image'
 const Hero = ({ data }) => {
   return (
-    <main className="container flex flex-col justify-between items-center py-12 md:flex-row">
+    <div className="container flex flex-col justify-between items-center py-12 md:flex-row">
+      <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
+        <NextImage media={data.picture} className="" />
+      </div>
       <div className="flex-1 sm:pr-8">
         <p className="font-semibold tracking-wide uppercase">{data.label}</p>
 
@@ -26,11 +29,7 @@ const Hero = ({ data }) => {
           <Markdown>{data.smallTextWithLink}</Markdown>
         </div>
       </div>
-
-      <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
-        <NextImage media={data.picture} className="" />
-      </div>
-    </main>
+    </div>
   )
 }
 export default Hero

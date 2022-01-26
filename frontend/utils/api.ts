@@ -20,7 +20,9 @@ export async function fetchAPI(path: string, options = {}) {
 
   if (!response.ok) {
     console.error('fetchAPI Error', response.url, response.statusText)
-    throw new Error(`An error occured please try again`)
+    throw new Error(
+      `An error occured please try again ${response.status} ${response.statusText} ${response.url}`
+    )
   }
   const data = await response.json()
   return data
@@ -64,7 +66,7 @@ export async function getPageData(params, locale, preview = false) {
 export async function getGlobalData(locale: string) {
   let language
   if (!locale) {
-    language = 'en'
+    language = 'de'
   } else {
     language = locale
   }
