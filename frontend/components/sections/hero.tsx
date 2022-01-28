@@ -6,7 +6,7 @@ const Hero = ({ data }) => {
   return (
     <div className="container flex flex-col justify-between items-center py-12 md:flex-row">
       <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
-        <NextImage media={data.picture} className="" />
+        <NextImage media={data.picture} />
       </div>
       <div className="flex-1 sm:pr-8">
         <p className="font-semibold tracking-wide uppercase">{data.label}</p>
