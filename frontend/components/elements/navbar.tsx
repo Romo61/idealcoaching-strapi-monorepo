@@ -148,7 +148,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
           </div>
           <div className="flex">
             {/* Locale Switch Mobile */}
-            {pageContext.localizedPaths && (
+            {pageContext.localizedPaths.length > 1 && (
               <div className="md:hidden">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
@@ -185,7 +185,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
             )}
             {/* Locale Switch Desktop */}
 
-            {pageContext.localizedPaths && (
+            {pageContext.localizedPaths.length > 1 && (
               <div className="hidden md:block">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
