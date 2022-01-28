@@ -21,6 +21,14 @@
       "type": "component",
       "repeatable": false,
       "component": "links.link"
+    },
+    "small_image": {
+      "type": "boolean",
+      "default": false
+    },
+    "image_border": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
