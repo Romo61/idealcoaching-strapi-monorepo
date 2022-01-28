@@ -61,13 +61,13 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
   return (
     <>
       {/* The actual navbar */}
-      <nav className="py-6 border-b-2 border-gray-200 sm:py-2">
+      <nav className="py-6 border-b-2 border-gray-200 sm:py-2 ">
         <div className="container flex flex-row justify-between items-center">
           {/* Content aligned to the left */}
           <div className="flex flex-row items-center">
             <Link href="/">
               <a className="w-32 h-8">
-                <NextImage width="120" height="33" media={navbar.logo} />
+                <NextImage width="120" height="50" media={navbar.logo} />
               </a>
             </Link>
             {/* List of links on desktop */}
@@ -148,7 +148,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
           </div>
           <div className="flex">
             {/* Locale Switch Mobile */}
-            {pageContext.localizedPaths && (
+            {pageContext.localizedPaths.length > 1 && (
               <div className="md:hidden">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
@@ -185,7 +185,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
             )}
             {/* Locale Switch Desktop */}
 
-            {pageContext.localizedPaths && (
+            {pageContext.localizedPaths.length > 1 && (
               <div className="hidden md:block">
                 <LocaleSwitch pageContext={pageContext} />
               </div>
