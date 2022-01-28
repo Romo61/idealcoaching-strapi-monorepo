@@ -5,9 +5,7 @@ import NextImage from '../elements/image'
 const Hero = ({ data }) => {
   return (
     <div className="container flex flex-col justify-between items-center py-12 md:flex-row">
-      <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
-        <NextImage media={data.picture} className="" />
-      </div>
+     
       <div className="flex-1 sm:pr-8">
         <p className="font-semibold tracking-wide uppercase">{data.label}</p>
 
@@ -28,6 +26,9 @@ const Hero = ({ data }) => {
         <div className="mt-4 text-base sm:mt-3 md:text-sm rich-text-hero">
           <Markdown>{data.smallTextWithLink}</Markdown>
         </div>
+      </div> 
+      <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
+        <NextImage media={data.picture} className="" />
       </div>
     </div>
   )
