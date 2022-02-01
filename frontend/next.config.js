@@ -17,11 +17,12 @@ const nextConfig = {
       'localhost',
       's3-images-strapibeammeup.s3.eu-central-1.amazonaws.com',
       'images.unsplash.com',
-      's3-images-idealcoacthingfargate.s3.eu-central-1.amazonaws.com',
+      's3-images-idealcoachingfargate.s3.eu-central-1.amazonaws.com',
     ],
   },
   async redirects() {
-    return [      {
+    return [
+      {
         source: '/projektteams',
         destination: '/team-entwicklung',
         permanent: true,
@@ -728,7 +729,8 @@ const nextConfig = {
         source: '/menschenkenntnis',
         destination: ' /',
         permanent: true,
-      },]
+      },
+    ]
   },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
