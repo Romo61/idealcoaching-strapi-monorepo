@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.emerald,
+        primary: colors.fuchsia,
         cyan: colors.cyan,
         yellow: colors.amber,
         orange: colors.orange,
@@ -70,7 +70,6 @@ module.exports = {
         'lime-green-700': '#507712',
         'lime-green-800': '#42600C',
         'lime-green-900': '#2B4005',
-
       },
       container: {
         center: true,
