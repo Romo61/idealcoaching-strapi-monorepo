@@ -8,6 +8,7 @@ const Hero = ({ data }) => {
       <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
         <NextImage media={data.picture} className="" />
       </div>
+
       <div className="flex-1 sm:pr-8">
         <p className="font-semibold tracking-wide uppercase">{data.label}</p>
 

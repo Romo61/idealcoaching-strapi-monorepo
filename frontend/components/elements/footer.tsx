@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = ({ footer }) => {
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div>
           {footer.logo && (
-            <NextImage width="120" height="33" media={footer.logo} />
+            <NextImage width="120" height="50" media={footer.logo} />
           )}
         </div>
         <nav className="flex flex-row flex-wrap items-start mb-10 lg:gap-20 lg:justify-end mx-auto px-4 sm:px-6 lg:px-8">
