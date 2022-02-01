@@ -6,15 +6,14 @@ export default class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
-           <script
+          <script
             id="usercentrics-cmp"
             data-settings-id="OE_qAIEQ8"
             src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
             defer
-          ></script> 
+          ></script>
 
-          
-           <script
+          <script
             data-usercentrics="Google Tag Manager"
             type="text/plain"
             async
@@ -28,7 +27,7 @@ export default class MyDocument extends Document {
               })(window,document,'script','dataLayer', 'GTM-TKNQ7FV');
               `,
             }}
-          /> 
+          />
           <link rel="preload" href="/fonts/inter-var-latin.woff2"></link>
 
           <link rel="preload" href="/fonts/fira/FiraSans-Bold.woff" />
