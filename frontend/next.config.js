@@ -21,7 +21,7 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return [
+    /*  return [
       {
         source: '/projektteams',
         destination: '/team-entwicklung',
@@ -730,7 +730,7 @@ const nextConfig = {
         destination: ' /',
         permanent: true,
       },
-    ]
+    ] */
   },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
