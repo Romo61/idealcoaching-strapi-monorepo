@@ -73,11 +73,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/[slug]',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/webanalyse-die-wirkt',
         destination: '/',
         permanent: true,
