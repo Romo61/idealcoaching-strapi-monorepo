@@ -1,10 +1,10 @@
-import MarkdownRender from 'utils/MarkdownRender'
-import ButtonLink from '../elements/button-link'
-import CustomImage from '../elements/image'
-import { getButtonAppearance } from 'utils/button'
-import React, { ReactElement, useState } from 'react'
-import Link from 'next/link'
-import CustomLink from './custom-link'
+import MarkdownRender from "utils/MarkdownRender"
+import ButtonLink from "../elements/button-link"
+import CustomImage from "../elements/image"
+import { getButtonAppearance } from "utils/button"
+import React, { ReactElement, useState } from "react"
+import Link from "next/link"
+import CustomLink from "./custom-link"
 
 export interface GradientHero {
   data: {
@@ -14,7 +14,7 @@ export interface GradientHero {
     blackText: string
     coloredText: string
     content: string
-    title_color: 'black' | 'orange' | 'green' | 'yellow' | 'blue' | 'red'
+    title_color: "black" | "orange" | "green" | "yellow" | "blue" | "red"
     seminarcard: Seminarcard[]
   }
 }
@@ -73,8 +73,8 @@ const SingleCard = ({
       <Link href={url}>
         <a
           // Change target and rel attributes is newTab is turned on
-          target={newTab ? '_blank' : '_self'}
-          rel={newTab ? 'noopener noreferrer' : ''}
+          target={newTab ? "_blank" : "_self"}
+          rel={newTab ? "noopener noreferrer" : ""}
           title={tilte}
         >
           <div className="relative flex-shrink-0">
@@ -87,13 +87,13 @@ const SingleCard = ({
             <div className="absolute bottom-0 left-0 w-full">
               <div className="flex flex-col flex-1 justify-between py-2 px-6 mx-auto bg-white">
                 <div className="flex-1">
-                  <p className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500 text-md">
+                  <p className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500 text-md text-left">
                     {category}
                   </p>
-                  <div className="hidden mt-2 lg:block">
-                    <div>
-                      <MarkdownRender>{text}</MarkdownRender>
-                    </div>
+                  <div className="mt-2">
+                    <MarkdownRender className="text-left">
+                      {text}
+                    </MarkdownRender>
                   </div>
                 </div>
               </div>
