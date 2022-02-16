@@ -91,9 +91,7 @@ const SingleCard = ({
                     {category}
                   </p>
                   <div className="mt-2">
-                    <MarkdownRender className="text-left">
-                      {text}
-                    </MarkdownRender>
+                    <MarkdownRender>{text}</MarkdownRender>
                   </div>
                 </div>
               </div>
