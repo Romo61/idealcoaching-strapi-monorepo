@@ -6,7 +6,7 @@ import slugify from "slugify"
 import * as React from "react"
 import classNames from "classnames"
 
-const MarkdownRender = ({ children, center }) => {
+const MarkdownRender = ({ children }) => {
   const customRender = {
     a: ({ href, children, title, ...props }) => {
       if (href.startsWith("#")) {
@@ -176,9 +176,7 @@ const MarkdownRender = ({ children, center }) => {
   return (
     <div>
       <ReactMarkdown
-        className={classNames("break-words prose prose-xl", {
-          "mx-auto": center,
-        })}
+        className={classNames("break-words prose prose-xl")}
         skipHtml={true}
         components={customRender}
       >
