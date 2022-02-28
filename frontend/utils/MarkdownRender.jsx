@@ -175,7 +175,7 @@ const MarkdownRender = ({ children }) => {
   return (
     <div>
       <ReactMarkdown
-        className="mx-auto break-words prose prose-xl"
+        className="mx-auto prose prose-lg lg:prose-2xl"
         skipHtml={true}
         components={customRender}
       >
