@@ -10,7 +10,7 @@ interface Props {
 
 function DynamicRichText({ data }: Props): ReactElement {
   return (
-    <div className="container grid grid-cols-1 py-12 mx-auto align-top lg:flex-row lg:flex-wrap">
+    <div className="container mx-auto grid grid-cols-1 py-12 align-top lg:flex-row lg:flex-wrap">
       <div
         className="mx-auto"
         key={data.id}

@@ -6,7 +6,7 @@ const ButtonContent = ({ button, appearance, compact }) => {
     <div
       className={classNames(
         // Common classes
-        'block w-full lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border-2 rounded-md',
+        'block w-full rounded-md border-2 text-center text-base font-semibold uppercase tracking-wide md:text-sm lg:w-auto',
         // Full-size button
         {
           'px-8 py-4': compact === false,
@@ -17,19 +17,19 @@ const ButtonContent = ({ button, appearance, compact }) => {
         },
         // Specific to when the button is fully dark
         {
-          'bg-primary-600 text-white border-primary-600': appearance === 'dark',
+          'border-primary-600 bg-primary-600 text-white': appearance === 'dark',
         },
         // Specific to when the button is dark outlines
         {
-          'text-primary-600 border-primary-600': appearance === 'dark-outline',
+          'border-primary-600 text-primary-600': appearance === 'dark-outline',
         },
         // Specific to when the button is fully white
         {
-          'bg-white text-primary-600 border-white': appearance === 'white',
+          'border-white bg-white text-primary-600': appearance === 'white',
         },
         // Specific to when the button is white outlines
         {
-          'text-white border-white': appearance === 'white-outline',
+          'border-white text-black': appearance === 'white-outline',
         }
       )}
     >

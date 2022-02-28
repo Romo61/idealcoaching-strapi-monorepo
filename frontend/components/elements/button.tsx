@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
       <div
         className={classNames(
           // Common classes
-          'flex w-full justify-center lg:w-auto text-center uppercase tracking-wide font-semibold text-base md:text-sm border-2 rounded-md',
+          'flex w-full justify-center rounded-md border-2 text-center text-base font-semibold uppercase tracking-wide md:text-sm lg:w-auto',
           // Full-size button
           {
             'px-8 py-4': compact === false,
@@ -34,21 +34,21 @@ const Button: React.FC<ButtonProps> = ({
           },
           // Specific to when the button is fully dark
           {
-            'bg-primary-600 text-white border-primary-600':
+            'border-primary-600 bg-primary-600 text-black':
               appearance === 'dark',
           },
           // Specific to when the button is dark outlines
           {
-            'text-primary-600 border-primary-600':
+            'border-primary-600 text-primary-600':
               appearance === 'dark-outline',
           },
           // Specific to when the button is fully white
           {
-            'bg-white text-primary-600 border-white': appearance === 'white',
+            'border-white bg-white text-primary-600': appearance === 'white',
           },
           // Specific to when the button is white outlines
           {
-            'text-white border-white': appearance === 'white-outline',
+            'border-white text-black': appearance === 'white-outline',
           }
         )}
       >

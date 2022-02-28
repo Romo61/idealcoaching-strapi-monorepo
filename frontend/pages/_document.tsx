@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
+
           <meta
             name="google-site-verification"
             content="_GnkHr4rAs_WXQy69wxzElwawE3bBM9Svu9bzMHQFCg"
@@ -17,8 +18,9 @@ export default class MyDocument extends Document {
           <script
             id="usercentrics-cmp"
             data-settings-id="t4_Zx_gEs"
-            src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
-            defer
+            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+             async
+
           ></script>
 
           <script

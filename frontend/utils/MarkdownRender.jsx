@@ -1,15 +1,12 @@
 /* eslint-disable react/display-name */
-import Link, { LinkProps } from "next/link"
-import ReactMarkdown from "react-markdown"
-import slugify from "slugify"
+import Link from 'next/link'
+import ReactMarkdown from 'react-markdown'
+import slugify from 'slugify'
 
-import * as React from "react"
-import classNames from "classnames"
-
-const MarkdownRender = (props) => {
+const MarkdownRender = ({ children }) => {
   const customRender = {
     a: ({ href, children, title, ...props }) => {
-      if (href.startsWith("#")) {
+      if (href.startsWith('#')) {
         return (
           <Link href={href} title={title} className="anchor">
             <a>{children}</a>
@@ -17,7 +14,7 @@ const MarkdownRender = (props) => {
         )
       }
 
-      if (href.startsWith("/"))
+      if (href.startsWith('/'))
         return (
           <Link href={href} title={title} className="internal">
             <a>{children}</a>
@@ -43,7 +40,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -54,7 +51,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -65,7 +62,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -76,7 +73,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -87,7 +84,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -98,7 +95,7 @@ const MarkdownRender = (props) => {
           {...props}
           id={slugify(`${node?.children[0]?.value}`, {
             lower: true,
-            locale: "de",
+            locale: 'de',
           })}
         />
       )
@@ -166,7 +163,6 @@ const MarkdownRender = (props) => {
               })}
             />
           )
-
         default:
           break
       }
@@ -176,13 +172,11 @@ const MarkdownRender = (props) => {
   return (
     <div>
       <ReactMarkdown
-        className={classNames("break-words prose prose-xl", {
-          "text-center prose max-w-none mx-auto": props?.center,
-        })}
+        className="prose prose-lg mx-auto prose-headings:underline prose-a:text-primary-600 lg:prose-2xl"
         skipHtml={true}
         components={customRender}
       >
-        {props.children}
+        {children}
       </ReactMarkdown>
     </div>
   )

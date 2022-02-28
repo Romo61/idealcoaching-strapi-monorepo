@@ -4,11 +4,11 @@ const LevelRow = ({ data: { id, title, titleColor, content } }) => {
   return (
     <div key={id}>
       <div className="mx-auto mt-8 max-w-prose">
-        <ul className="py-4 mx-auto max-w-prose">
-          <li className="list-inside align-baseline list-check">
+        <ul className="mx-auto max-w-prose py-4">
+          <li className="list-check list-inside align-baseline">
             <span
               className={classNames(
-                'font-bold text-transparent bg-clip-text bg-gradient-to-r text-2xl text-left',
+                'bg-gradient-to-r bg-clip-text text-left text-2xl font-bold text-transparent',
                 {
                   'from-yellow-800 to-yellow-500': titleColor === 'orange',
                   'from-primary-500 to-green-400': titleColor === 'green',

@@ -13,27 +13,27 @@ type FooterProps = {
 }
 const Footer: React.FC<FooterProps> = ({ footer }) => {
   return (
-    <footer className="pt-12 bg-gray-100">
+    <footer className="bg-gray-100 pt-12">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div>
           {footer.logo && (
             <NextImage width="120" height="50" media={footer.logo} />
           )}
         </div>
-        <nav className="flex flex-row flex-wrap items-start mb-10 lg:gap-20 lg:justify-end mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="mx-auto mb-10 flex flex-row flex-wrap items-start px-4 sm:px-6 lg:justify-end lg:gap-20 lg:px-8">
           {footer.columns.map((footerColumn) => (
             <div
               key={footerColumn.id}
               className="mt-10 w-6/12 lg:mt-0 lg:w-auto"
             >
-              <p className="font-semibold tracking-wide uppercase">
+              <p className="font-semibold uppercase tracking-wide">
                 {footerColumn.title}
               </p>
               <ul className="mt-2">
                 {footerColumn.links.map((link) => (
                   <li
                     key={link.id}
-                    className="py-1 px-1 -mx-1 text-gray-700 hover:text-gray-900"
+                    className="-mx-1 py-1 px-1 text-gray-700 hover:text-gray-900"
                   >
                     <CustomLink link={link}>{link.text}</CustomLink>
                   </li>
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ footer }) => {
           ))}
         </nav>
       </div>
-      <div className="py-6 text-sm text-gray-700 bg-gray-200 text-center">
+      <div className="bg-gray-200 py-6 text-center text-sm text-gray-700">
         <div className="container">
           {new Date().getFullYear()} {footer.smallText}
         </div>

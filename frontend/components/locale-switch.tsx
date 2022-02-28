@@ -63,7 +63,7 @@ const LocaleSwitch = ({ pageContext }) => {
     <div ref={select} className="relative ml-4">
       <button
         type="button"
-        className="flex justify-between items-center py-2 px-2 w-20 h-full rounded-md cursor-pointer focus:outline-none hover:bg-primary-50 hover:text-primary-600 focus:bg-primary-50 focus:text-primary-600"
+        className="flex h-full w-20 cursor-pointer items-center justify-between rounded-md py-2 px-2 hover:bg-primary-50 hover:text-primary-600 focus:bg-primary-50 focus:text-primary-600 focus:outline-none"
         onClick={() => setShowing(!showing)}
       >
         <WorldIcon />
@@ -71,7 +71,7 @@ const LocaleSwitch = ({ pageContext }) => {
         <div className="ml-1 text-primary-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5"
+            className="h-5 w-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -84,7 +84,7 @@ const LocaleSwitch = ({ pageContext }) => {
         </div>
       </button>
       <div
-        className={`w-full bg-white p-1 mt-1 shadow-lg rounded-md ${
+        className={`mt-1 w-full rounded-md bg-white p-1 shadow-lg ${
           showing ? 'absolute' : 'hidden'
         }`}
       >
@@ -94,7 +94,7 @@ const LocaleSwitch = ({ pageContext }) => {
               <Link href={href} key={locale} locale={locale} passHref>
                 <p
                   onClick={() => handleLocaleChange(locale)}
-                  className="p-2 text-center capitalize rounded-md cursor-pointer hover:bg-primary-50 hover:text-primary-600"
+                  className="cursor-pointer rounded-md p-2 text-center capitalize hover:bg-primary-50 hover:text-primary-600"
                 >
                   {locale}
                 </p>
