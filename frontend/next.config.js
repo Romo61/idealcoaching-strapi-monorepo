@@ -20,7 +20,9 @@ const nextConfig = {
       's3-images-idealcoacthingfargate.s3.eu-central-1.amazonaws.com',
     ],
   },
-  async redirects() {},
+  async redirects() {
+    return []
+  },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       config.plugins.push(
