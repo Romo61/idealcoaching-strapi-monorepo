@@ -1,10 +1,11 @@
 import Markdown from 'react-markdown'
 import { getButtonAppearance } from 'utils/button'
+import MarkdownRender from 'utils/MarkdownRender'
 import ButtonLink from '../elements/button-link'
 import NextImage from '../elements/image'
 const Hero = ({ data }) => {
   return (
-    <div className="container flex flex-col items-center justify-between py-12 md:flex-row">
+    <div className="container flex flex-col items-center justify-between gap-12 py-12 md:flex-row">
       <div className="mt-6 w-full flex-shrink-0 md:mt-0 md:w-6/12">
         <NextImage media={data.picture} className="" />
       </div>
@@ -26,8 +27,8 @@ const Hero = ({ data }) => {
           ))}
         </div>
 
-        <div className="rich-text-hero mt-4 text-base sm:mt-3 md:text-sm">
-          <Markdown>{data.smallTextWithLink}</Markdown>
+        <div className="mt-4 sm:mt-3">
+          <MarkdownRender>{data.smallTextWithLink}</MarkdownRender>
         </div>
       </div>
     </div>

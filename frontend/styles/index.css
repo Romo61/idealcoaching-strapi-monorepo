@@ -19,10 +19,6 @@ html {
   }
 }
 
-.rich-text-hero a {
-  @apply text-primary-600 underline;
-}
-
 .rich-text-banner {
   @apply whitespace-pre-line;
   a {
@@ -31,7 +27,7 @@ html {
 }
 
 .title {
-  @apply text-4xl leading-snug font-semibold;
+  @apply text-4xl font-semibold leading-snug;
 }
 
 @media (min-width: 768px) {
@@ -54,7 +50,7 @@ html {
 }
 
 .error-style {
-  @apply text-red-500 font-semibold h-12 text-base mt-1 ml-2 text-left;
+  @apply mt-1 ml-2 h-12 text-left text-base font-semibold text-red-500;
 }
 
 .cssgradient {

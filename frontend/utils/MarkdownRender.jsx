@@ -1,9 +1,7 @@
 /* eslint-disable react/display-name */
-import Link, { LinkProps } from 'next/link'
+import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import slugify from 'slugify'
-
-import * as React from 'react'
 
 const MarkdownRender = ({ children }) => {
   const customRender = {
@@ -175,7 +173,7 @@ const MarkdownRender = ({ children }) => {
   return (
     <div>
       <ReactMarkdown
-        className="prose prose-lg mx-auto lg:prose-2xl"
+        className="prose prose-lg prose-headings:underline prose-a:text-primary-600 lg:prose-2xl"
         skipHtml={true}
         components={customRender}
       >
