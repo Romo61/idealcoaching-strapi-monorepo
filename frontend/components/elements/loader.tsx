@@ -3,7 +3,7 @@ const Loader = () => {
   return (
     <svg
       viewBox="0 0 38 38"
-      className="mr-2 w-5 h-5 animate-spin stroke-current text-black-600"
+      className="text-black-600 mr-2 h-5 w-5 animate-spin stroke-current"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="none" fillRule="evenodd">

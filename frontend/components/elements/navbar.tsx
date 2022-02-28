@@ -61,12 +61,12 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
   return (
     <>
       {/* The actual navbar */}
-      <nav className="py-6 border-b-2 border-gray-200 sm:py-2 ">
-        <div className="container flex flex-row justify-between items-center">
+      <nav className="border-b-2 border-gray-200 py-6 sm:py-2 ">
+        <div className="container flex flex-row items-center justify-between">
           {/* Content aligned to the left */}
           <div className="flex flex-row items-center">
             <Link href="/">
-              <a className="w-32 h-8">
+              <a className="h-8 w-32">
                 <NextImage width="120" height="50" media={navbar.logo} />
               </a>
             </Link>
@@ -83,14 +83,14 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
               ))}
             </ul> */}
 
-            <ul className="hidden flex-row gap-4 items-baseline ml-10 list-none md:flex">
+            <ul className="ml-10 hidden list-none flex-row items-baseline gap-4 md:flex">
               {navbar.links.map((menuLink) => (
                 <div key={menuLink.id}>
                   {menuLink.links[0] ? (
                     <Menu as="div" className="relative inline-block text-left">
                       <div>
                         <div>
-                          <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-primary-500">
+                          <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-100">
                             <Link href={menuLink.url} passHref>
                               <a title={menuLink.title}>{menuLink.text}</a>
                             </Link>
@@ -110,7 +110,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
                               {menuLink.links.map((item) => (
                                 <Link key={item.id} href={item.url} passHref>
@@ -121,7 +121,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
                                           active
                                             ? 'bg-gray-100 text-gray-900'
                                             : 'text-gray-700',
-                                          'block px-4 py-2 text-sm hover:text-gray-100 hover:bg-gray-900'
+                                          'block px-4 py-2 text-sm hover:bg-gray-900 hover:text-gray-100'
                                         )}
                                       >
                                         {item.text}
@@ -159,10 +159,10 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
               className="block p-1 md:hidden"
               aria-label="Mobile Navigation"
             >
-              <div className="w-auto h-8">
+              <div className="h-8 w-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-8"
+                  className="h-8 w-8"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

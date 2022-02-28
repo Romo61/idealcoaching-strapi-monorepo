@@ -21,8 +21,8 @@ export default function CoverImageComp({
 }: ImageItem): ReactElement {
   return (
     <div
-      className={classNames('block container mx-auto ', {
-        'border-b-8 border-canary-primary-500': image_border === true,
+      className={classNames('container mx-auto block ', {
+        'border-canary-primary-500 border-b-8': image_border === true,
       })}
     >
       <Image
