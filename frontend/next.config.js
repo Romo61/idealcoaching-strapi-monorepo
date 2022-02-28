@@ -22,6 +22,7 @@ const nextConfig = {
   },
   async redirects() {
 
+
     return [
       {
         source: '/cms',
