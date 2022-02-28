@@ -157,6 +157,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
             <button
               onClick={() => setMobileMenuIsShown(true)}
               className="block p-1 md:hidden"
+              aria-label="Mobile Navigation"
             >
               <div className="w-auto h-8">
                 <svg

@@ -29,7 +29,7 @@ const ButtonContent = ({ button, appearance, compact }) => {
         },
         // Specific to when the button is white outlines
         {
-          'text-white border-white': appearance === 'white-outline',
+          'text-black border-white': appearance === 'white-outline',
         }
       )}
     >
