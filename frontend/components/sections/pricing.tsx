@@ -30,8 +30,8 @@ const Pricing = ({ data }: Pricing) => {
   return (
     <div>
       <div className="bg-white">
-        <div className="py-24 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="sm:flex sm:flex-col sm:align-center">
+        <div className="mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:px-8">
+          <div className="sm:align-center sm:flex sm:flex-col">
             <h2 className="text-4xl font-extrabold text-gray-900 sm:text-center">
               {data.title}
             </h2>
@@ -54,11 +54,11 @@ const Pricing = ({ data }: Pricing) => {
             </button>
           </div> */}
           </div>
-          <div className="mt-12 space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:mt-16 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:grid-cols-3 xl:mx-0 xl:max-w-none">
+          <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-3">
             {data.plans.map((plan) => (
               <div
                 key={plan.name}
-                className="rounded-lg border border-gray-200 divide-y divide-gray-200 shadow-sm"
+                className="divide-y divide-gray-200 rounded-lg border border-gray-200 shadow-sm"
               >
                 <div className="p-6">
                   <h3 className="text-lg font-medium leading-6 text-gray-900">
@@ -77,21 +77,21 @@ const Pricing = ({ data }: Pricing) => {
                   </p>
                   <Link href="/kontakt">
                     <a>
-                      <span className="block py-2 mt-8 w-full text-sm font-semibold text-center text-white bg-gray-800 rounded-md border border-gray-800 hover:bg-gray-900">
+                      <span className="mt-8 block w-full rounded-md border border-gray-800 bg-gray-800 py-2 text-center text-sm font-semibold text-white hover:bg-gray-900">
                         Buy {plan.name}
                       </span>
                     </a>
                   </Link>
                 </div>
                 <div className="px-6 pt-6 pb-8">
-                  <h4 className="text-xs font-medium tracking-wide text-gray-900 uppercase">
+                  <h4 className="text-xs font-medium uppercase tracking-wide text-gray-900">
                     What&apos;s included
                   </h4>
                   <ul role="list" className="mt-6 space-y-4">
                     {plan.features.map((feature) => (
                       <li key={feature.id} className="flex space-x-3">
                         <CheckIcon
-                          className="flex-shrink-0 w-5 h-5 text-green-500"
+                          className="h-5 w-5 flex-shrink-0 text-green-500"
                           aria-hidden="true"
                         />
                         <span className="text-sm text-gray-500">

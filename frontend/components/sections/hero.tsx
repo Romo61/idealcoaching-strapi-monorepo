@@ -1,18 +1,19 @@
 import Markdown from 'react-markdown'
 import { getButtonAppearance } from 'utils/button'
+import MarkdownRender from 'utils/MarkdownRender'
 import ButtonLink from '../elements/button-link'
 import NextImage from '../elements/image'
 const Hero = ({ data }) => {
   return (
-    <div className="container flex flex-col justify-between items-center py-12 md:flex-row">
-      <div className="flex-shrink-0 mt-6 w-full md:mt-0 md:w-6/12">
+    <div className="container flex flex-col items-center justify-between gap-12 py-12 md:flex-row">
+      <div className="mt-6 w-full flex-shrink-0 md:mt-0 md:w-6/12">
         <NextImage media={data.picture} className="" />
       </div>
 
       <div className="flex-1 sm:pr-8">
-        <p className="font-semibold tracking-wide uppercase">{data.label}</p>
+        <p className="font-semibold uppercase tracking-wide">{data.label}</p>
 
-        <h1 className="mt-2 mb-4 sm:mt-0 sm:mb-2 title">{data.title}</h1>
+        <h1 className="title mt-2 mb-4 sm:mt-0 sm:mb-2">{data.title}</h1>
 
         <p className="mb-6 text-xl">{data.description}</p>
 
@@ -26,8 +27,8 @@ const Hero = ({ data }) => {
           ))}
         </div>
 
-        <div className="mt-4 text-base sm:mt-3 md:text-sm rich-text-hero">
-          <Markdown>{data.smallTextWithLink}</Markdown>
+        <div className="mt-4 sm:mt-3">
+          <MarkdownRender>{data.smallTextWithLink}</MarkdownRender>
         </div>
       </div>
     </div>

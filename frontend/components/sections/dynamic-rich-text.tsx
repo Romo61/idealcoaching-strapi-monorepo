@@ -62,11 +62,11 @@ function DynamicRichText({ data }: Props): ReactElement {
   )
 
   const handleChange = () => {
-    console.log('Start handleChange')
+    // console.log('Start handleChange')
     window.dataLayer.push({
       event: 'test',
     })
-    console.log('END handleChange')
+    // console.log('END handleChange')
   }
 
   useEffect(() => {
@@ -102,13 +102,13 @@ function DynamicRichText({ data }: Props): ReactElement {
                     {' '}
                   </Listbox.Label>
                   <div className="relative mt-1">
-                    <Listbox.Button className="relative py-2 pr-10 pl-3 w-full text-left bg-white rounded-md border border-gray-300 shadow-sm cursor-default sm:text-sm focus:ring-1 focus:outline-none focus:border-primary-500 focus:ring-primary-500">
+                    <Listbox.Button className="relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pr-10 pl-3 text-left shadow-sm focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:text-sm">
                       <span className="block truncate">
                         {selected.shortName}
                       </span>
-                      <span className="flex absolute inset-y-0 right-0 items-center pr-2 pointer-events-none">
+                      <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                         <SelectorIcon
-                          className="w-5 h-5 text-gray-400"
+                          className="h-5 w-5 text-gray-400"
                           aria-hidden="true"
                         />
                       </span>
@@ -121,16 +121,16 @@ function DynamicRichText({ data }: Props): ReactElement {
                       leaveFrom="opacity-100"
                       leaveTo="opacity-0"
                     >
-                      <Listbox.Options className="overflow-auto absolute z-10 py-1 mt-1 w-full max-h-60 text-base bg-white rounded-md ring-1 ring-black ring-opacity-5 shadow-lg sm:text-sm focus:outline-none">
+                      <Listbox.Options className="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
                         {data.RichTextSelektor.map((item) => (
                           <div key={item.id}>
                             <Listbox.Option
                               className={({ active }) =>
                                 classNames(
                                   active
-                                    ? 'text-white bg-primary-600'
+                                    ? 'bg-primary-600 text-white'
                                     : 'text-gray-900',
-                                  'cursor-default select-none relative py-2 pl-3 pr-9'
+                                  'relative cursor-default select-none py-2 pl-3 pr-9'
                                 )
                               }
                               value={item.dynamic_rich_text}
@@ -158,7 +158,7 @@ function DynamicRichText({ data }: Props): ReactElement {
                                       )}
                                     >
                                       <CheckIcon
-                                        className="w-5 h-5"
+                                        className="h-5 w-5"
                                         aria-hidden="true"
                                       />
                                     </span>
@@ -175,9 +175,9 @@ function DynamicRichText({ data }: Props): ReactElement {
               )}
             </Listbox>
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
-              <div className="p-3 my-8 bg-gray-200 rounded">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl">
+              <div className="my-8 rounded bg-gray-200 p-3">
                 <MarkdownRender>{dynamicData.content}</MarkdownRender>
               </div>
             </div>

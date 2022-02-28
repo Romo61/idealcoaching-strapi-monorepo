@@ -6,9 +6,16 @@ interface CustomImageProps {
   className?: string
   width?: string | number
   height?: string | number
+  layout?: 'fixed' | 'intrinsic' | 'fill' | 'responsive'
 }
 
-const CustomImage = ({ media, className, width, height }: CustomImageProps) => {
+const CustomImage = ({
+  media,
+  className,
+  width,
+  height,
+  layout,
+}: CustomImageProps) => {
   const fullUrl = getStrapiMedia(media?.url)
 
   if (media)
@@ -18,7 +25,7 @@ const CustomImage = ({ media, className, width, height }: CustomImageProps) => {
           src={fullUrl}
           alt={media?.alternativeText || ''}
           title={media?.caption || ''}
-          layout="intrinsic"
+          layout={layout || 'intrinsic'}
           className={className}
           width={width || media?.width}
           height={height || media?.height}

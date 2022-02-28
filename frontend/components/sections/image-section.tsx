@@ -25,7 +25,7 @@ const BorderWrapper: React.FC<IBorderWrapper> = ({
   return (
     <div>
       {image_border ? (
-        <div className="border-2 border-primary-400 rounded shadow shadow-primary-600">
+        <div className="rounded border-2 border-primary-400 shadow shadow-primary-600">
           {children}
         </div>
       ) : (
@@ -47,7 +47,7 @@ interface IImageSectionProps {
 
 const ImageSection: React.FC<IImageSectionProps> = ({ data }) => {
   return (
-    <div className="container grid grid-cols-1 justify-items-center mx-auto max-w-prose md:max-w-screen-md lg:max-w-screen-lg my-0 sm:my-4 md:my-8">
+    <div className="container mx-auto my-0 grid max-w-prose grid-cols-1 justify-items-center sm:my-4 md:my-8 md:max-w-screen-md lg:max-w-screen-lg">
       <LinkWrapper link={data?.link}>
         <BorderWrapper image_border={data.image_border}>
           {data.small_image ? (
@@ -55,14 +55,14 @@ const ImageSection: React.FC<IImageSectionProps> = ({ data }) => {
               media={data?.picture}
               width={333}
               height={250}
-              className="object-contain mx-auto w-full"
+              className="mx-auto w-full object-contain"
             />
           ) : (
             <CustomImage
               media={data?.picture}
               width={500}
               height={375}
-              className="object-contain mx-auto w-full"
+              className="mx-auto w-full object-contain"
             />
           )}
         </BorderWrapper>
