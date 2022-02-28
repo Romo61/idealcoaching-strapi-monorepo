@@ -6,12 +6,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
-          <script
-            id="usercentrics-cmp"
-            data-settings-id="OE_qAIEQ8"
-            src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
-            defer
-          ></script>
+        
+          <script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-settings-id="OE_qAIEQ8" async></script> 
 
           <script
             data-usercentrics="Google Tag Manager"
