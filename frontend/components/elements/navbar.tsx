@@ -113,22 +113,22 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
                           <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
                               {menuLink.links.map((item) => (
-                                <Menu.Item key={item.id}>
-                                  {({ active }) => (
-                                    <Link href={item.url}>
+                                <Link key={item.id} href={item.url} passHref>
+                                  <Menu.Item>
+                                    {({ active }) => (
                                       <a
                                         className={classNames(
                                           active
                                             ? 'bg-gray-100 text-gray-900'
                                             : 'text-gray-700',
-                                          'block px-4 py-2 text-sm hover:bg-gray-100'
+                                          'block px-4 py-2 text-sm hover:text-gray-100 hover:bg-gray-900'
                                         )}
                                       >
                                         {item.text}
                                       </a>
-                                    </Link>
-                                  )}
-                                </Menu.Item>
+                                    )}
+                                  </Menu.Item>
+                                </Link>
                               ))}
                             </div>
                           </Menu.Items>
