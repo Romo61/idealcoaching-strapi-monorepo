@@ -122,7 +122,7 @@ function GradientHero({ data }: GradientHero): ReactElement {
             </div>
             <div className="relative mx-auto max-w-7xl">
               <div className="pt-8 text-center">
-                <MarkdownRender>{data.content}</MarkdownRender>
+                <MarkdownRender center={true}>{data.content}</MarkdownRender>
               </div>
 
               <div className="mx-auto mt-12 grid max-w-lg grid-cols-1 gap-3 lg:max-w-none lg:grid-cols-1">

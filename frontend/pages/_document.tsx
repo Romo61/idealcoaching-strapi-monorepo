@@ -6,11 +6,21 @@ export default class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
+
+          <meta
+            name="google-site-verification"
+            content="_GnkHr4rAs_WXQy69wxzElwawE3bBM9Svu9bzMHQFCg"
+          />
+          <meta
+            name="msvalidate.01"
+            content="6A9167171CB75C3A6EB9B2299F08F38C"
+          />
           <script
             id="usercentrics-cmp"
+            data-settings-id="t4_Zx_gEs"
             src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-            data-settings-id="OE_qAIEQ8"
-            async
+             async
+
           ></script>
 
           <script
@@ -24,7 +34,7 @@ export default class MyDocument extends Document {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer', 'GTM-TKNQ7FV');
+              })(window,document,'script','dataLayer', 'GTM-MBTTTNH');
               `,
             }}
           />
@@ -43,7 +53,7 @@ export default class MyDocument extends Document {
         <body>
           <noscript>
             <iframe
-              src="https://www.googletagmanager.com/ns.html?id=GTM-TKNQ7FV"
+              src="https://www.googletagmanager.com/ns.html?id=GTM-MBTTTNH"
               height="0"
               width="0"
               style={{ display: 'none', visibility: 'hidden' }}

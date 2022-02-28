@@ -163,7 +163,6 @@ const MarkdownRender = ({ children }) => {
               })}
             />
           )
-
         default:
           break
       }
