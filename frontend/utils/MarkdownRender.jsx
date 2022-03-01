@@ -1,11 +1,8 @@
 /* eslint-disable react/display-name */
-import Link, { LinkProps } from 'next/link'
+import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 import slugify from 'slugify'
-
-import * as React from 'react'
 import classNames from 'classnames'
-
 const MarkdownRender = (props) => {
   const customRender = {
     a: ({ href, children, title, ...props }) => {
@@ -175,9 +172,12 @@ const MarkdownRender = (props) => {
   return (
     <div>
       <ReactMarkdown
-        className={classNames('prose prose-xl break-words', {
-          'prose mx-auto max-w-none text-center': props?.center,
-        })}
+        className={classNames(
+          'prose prose-lg mx-auto prose-headings:underline prose-a:text-primary-600 lg:prose-2xl',
+          {
+            'prose mx-auto max-w-none text-center': props?.center,
+          }
+        )}
         skipHtml={true}
         components={customRender}
       >

@@ -1,10 +1,10 @@
-import MarkdownRender from 'utils/MarkdownRender'
-import ButtonLink from '../elements/button-link'
-import CustomImage from '../elements/image'
-import { getButtonAppearance } from 'utils/button'
-import React, { ReactElement, useState } from 'react'
-import Link from 'next/link'
-import CustomLink from './custom-link'
+import MarkdownRender from "utils/MarkdownRender"
+import ButtonLink from "../elements/button-link"
+import CustomImage from "../elements/image"
+import { getButtonAppearance } from "utils/button"
+import React, { ReactElement, useState } from "react"
+import Link from "next/link"
+import CustomLink from "./custom-link"
 
 export interface GradientHero {
   data: {
@@ -14,7 +14,7 @@ export interface GradientHero {
     blackText: string
     coloredText: string
     content: string
-    title_color: 'black' | 'orange' | 'green' | 'yellow' | 'blue' | 'red'
+    title_color: "black" | "orange" | "green" | "yellow" | "blue" | "red"
     seminarcard: Seminarcard[]
   }
 }
@@ -73,8 +73,8 @@ const SingleCard = ({
       <Link href={url}>
         <a
           // Change target and rel attributes is newTab is turned on
-          target={newTab ? '_blank' : '_self'}
-          rel={newTab ? 'noopener noreferrer' : ''}
+          target={newTab ? "_blank" : "_self"}
+          rel={newTab ? "noopener noreferrer" : ""}
           title={tilte}
         >
           <div className="relative flex-shrink-0">
@@ -87,7 +87,7 @@ const SingleCard = ({
             <div className="absolute bottom-0 left-0 w-full">
               <div className="mx-auto flex flex-1 flex-col justify-between bg-white py-2 px-6">
                 <div className="flex-1">
-                  <p className="text-md bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-left font-bold text-transparent">
+                  <p className="text-md bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text font-bold text-transparent">
                     {category}
                   </p>
                   <div className="mt-2 hidden lg:block">
