@@ -39,33 +39,33 @@ const MobileNavMenu = ({ navbar, closeSelf }: MobileNavMenuProps) => {
   useLockBodyScroll()
 
   return (
-    <div className="overflow-y-scroll fixed top-0 left-0 z-10 pb-6 w-screen h-screen bg-white">
+    <div className="fixed top-0 left-0 z-10 h-screen w-screen overflow-y-scroll bg-white pb-6">
       <div className="container flex flex-col justify-between">
         {/* Top section */}
-        <div className="grid grid-flow-row grid-cols-3 justify-between items-center">
+        <div className="grid grid-flow-row grid-cols-3 items-center justify-between">
           <div></div>
           {navbar.logo ? (
             <CustomImage
               media={navbar?.logo}
-              className="object-contain w-auto h-auto"
+              className="h-auto w-auto object-contain"
               width={128}
               height={64}
             />
           ) : (
             <CustomImage
               media={navbar?.mobileLogo}
-              className="object-contain w-auto h-auto"
+              className="h-auto w-auto object-contain"
               width={128}
               height={64}
             />
           )}
           {/* Close button */}
-          <div className="block justify-self-end p-1 mr-1">
+          <div className="mr-1 block justify-self-end p-1">
             <button onClick={closeSelf} className="py-1 px-1">
-              <div className="w-auto h-8">
+              <div className="h-8 w-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -81,19 +81,19 @@ const MobileNavMenu = ({ navbar, closeSelf }: MobileNavMenuProps) => {
         </div>
 
         {/* Bottom section */}
-        <div className="flex flex-col justify-end mx-auto w-9/12">
-          <ul className="flex flex-col gap-6 items-baseline mb-10 text-xl list-none">
+        <div className="mx-auto flex w-9/12 flex-col justify-end">
+          <ul className="mb-10 flex list-none flex-col items-baseline gap-6 text-xl">
             {navbar.links.map((navLink) => (
               <li onClick={closeSelf} key={navLink.id} className="block w-full">
                 <div className=" space-y-1">
                   <CustomLink link={navLink}>
-                    <div className="flex flex-row justify-between items-center pb-2 hover:text-gray-900 font-bold">
+                    <div className="flex flex-row items-center justify-between pb-2 font-bold hover:text-gray-900">
                       <span>{navLink?.text}</span>
 
-                      <div className="w-auto h-8">
+                      <div className="h-8 w-auto">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-8 h-8"
+                          className="h-8 w-8"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"

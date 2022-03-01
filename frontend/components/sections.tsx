@@ -52,7 +52,7 @@ const PreviewModeBanner = () => {
   )}`
 
   return (
-    <div className="py-4 font-semibold tracking-wide text-red-100 uppercase bg-red-600">
+    <div className="bg-red-600 py-4 font-semibold uppercase tracking-wide text-red-100">
       <div className="container">
         Preview mode is on.{' '}
         <a

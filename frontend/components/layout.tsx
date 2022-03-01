@@ -68,7 +68,7 @@ const Layout = ({ children, global, pageContext }: Props) => {
 
   const [bannerIsShown, setBannerIsShown] = useState(true)
   return (
-    <div className="flex flex-col justify-between min-h-screen font-sans antialiased">
+    <div className="flex min-h-screen flex-col justify-between font-sans antialiased">
       {/* Aligned to the top */}
       <div className="flex-1">
         {notificationBanner && bannerIsShown && (
@@ -78,7 +78,7 @@ const Layout = ({ children, global, pageContext }: Props) => {
           />
         )}
         <Navbar navbar={navbar} pageContext={pageContext} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">{children}</div>
       </div>
       {/* Aligned to the bottom */}
       <Footer footer={footer} />

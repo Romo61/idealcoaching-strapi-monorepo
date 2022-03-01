@@ -7,17 +7,17 @@ const TestimonialsGroup = ({ data }) => {
   const [selectedTestimonialIndex, setSelectedTestimonialIndex] = useState(0)
   const selectedTestimonial = data.testimonials[selectedTestimonialIndex]
   return (
-    <section className="pt-12 pb-16 text-lg text-center bg-gray-200">
-      <h2 className="mb-4 title">{data.title}</h2>
+    <section className="bg-gray-200 pt-12 pb-16 text-center text-lg">
+      <h2 className="title mb-4">{data.title}</h2>
       <p className="mb-4 text-gray-700">{data.description}</p>
       <CustomLink link={data.link}>
-        <span className="text-primary-700 hover:underline with-arrow">
+        <span className="with-arrow text-primary-700 hover:underline">
           {data.link.text}
         </span>
       </CustomLink>
 
-      <div className="flex flex-col mx-auto mt-10 w-8/12 max-w-5xl text-left bg-white shadow-md sm:flex-row sm:w-8/12 sm:shadow-xl">
-        <div className="flex-shrink-0 w-full md:w-4/12">
+      <div className="mx-auto mt-10 flex w-8/12 max-w-5xl flex-col bg-white text-left shadow-md sm:w-8/12 sm:flex-row sm:shadow-xl">
+        <div className="w-full flex-shrink-0 md:w-4/12">
           <NextImage media={selectedTestimonial.picture} />
         </div>
         <div className="flex flex-col justify-between py-4 px-4 sm:px-12 sm:pt-12 sm:pb-4">
@@ -46,7 +46,7 @@ const TestimonialsGroup = ({ data }) => {
               id: 0,
             }}
           >
-            <span className="mt-6 tracking-wide text-primary-700 uppercase sm:self-end sm:mt-0 hover:underline with-arrow">
+            <span className="with-arrow mt-6 uppercase tracking-wide text-primary-700 hover:underline sm:mt-0 sm:self-end">
               Read story
             </span>
           </CustomLink>
@@ -54,13 +54,13 @@ const TestimonialsGroup = ({ data }) => {
       </div>
 
       {data.testimonials.length > 1 && (
-        <div className="flex flex-row gap-4 justify-center mt-10">
+        <div className="mt-10 flex flex-row justify-center gap-4">
           {data.testimonials.map((testimonial, index) => (
             <button
               onClick={() => setSelectedTestimonialIndex(index)}
               className={classNames(
                 // Common classes
-                'rounded-full h-3 w-3',
+                'h-3 w-3 rounded-full',
                 {
                   'bg-gray-500': index !== selectedTestimonialIndex,
                   'bg-primary-600': index === selectedTestimonialIndex,
@@ -72,7 +72,7 @@ const TestimonialsGroup = ({ data }) => {
         </div>
       )}
 
-      <div className="flex flex-row flex-wrap gap-6 justify-center items-center px-6 mt-10 sm:gap-20 sm:px-0">
+      <div className="mt-10 flex flex-row flex-wrap items-center justify-center gap-6 px-6 sm:gap-20 sm:px-0">
         {data.logos.map((logo) => (
           <NextImage key={logo.id} width="120" height="33" media={logo.logo} />
         ))}
