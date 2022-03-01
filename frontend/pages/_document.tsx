@@ -41,6 +41,8 @@ export default class MyDocument extends Document {
         </Head>
 
         <body>
+          {console.log(process.env.NEXT_PUBLIC_USERCENTRICS_SETTINGS_ID)}
+          {console.log(process.env.NEXT_PUBLIC_GTM_ID)}
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
