@@ -13,7 +13,8 @@ import ImageSection from "./sections/image-section"
 import DynamicRichText from "./sections/dynamic-rich-text"
 import DangerousHTML from "./sections/dangerous-html"
 import GradientHero from "./sections/gradient-hero"
-import ButtonLink from "./elements/button-link"
+import linksButtonLink from "./sections/linksButtonLink"
+import Heading from "./sections/heading"
 
 // Map Strapi sections to section components
 const sectionComponents = {
@@ -31,7 +32,8 @@ const sectionComponents = {
   "sections.dynamic-content": DynamicRichText,
   "sections.dangerous-html": DangerousHTML,
   "sections.gradient-hero": GradientHero,
-  "links.button-link": ButtonLink,
+  "links.button-link": linksButtonLink,
+  "sections.heading": Heading,
 }
 
 // Display a section individually
