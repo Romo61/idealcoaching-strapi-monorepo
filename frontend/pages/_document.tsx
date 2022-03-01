@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 export default class MyDocument extends Document {
   render() {
@@ -46,7 +46,7 @@ export default class MyDocument extends Document {
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM_ID}`}
               height="0"
               width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
+              style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
           <Main />

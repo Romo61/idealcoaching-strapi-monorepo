@@ -1,10 +1,10 @@
-import { ButtonContent } from './ButtonContent'
+import { ButtonContent } from "./ButtonContent"
 
-import CustomLink from './custom-link'
+import CustomLink from "./custom-link"
 
 type ButtonLinkProps = {
   button?: any
-  appearance?: 'dark' | 'white-outline' | 'white' | 'dark-outline'
+  appearance?: "dark" | "white-outline" | "white" | "dark-outline"
   compact?: boolean
 }
 const ButtonLink: React.FC<ButtonLinkProps> = ({
