@@ -2,14 +2,17 @@ import classNames from 'classnames'
 import { useState } from 'react'
 import NextImage from '../elements/image'
 import CustomLink from '../elements/custom-link'
+import CustomImage from '../elements/custom-image'
 const TestimonialsGroup = ({ data }) => {
   // Only show one testimonial at a time
   const [selectedTestimonialIndex, setSelectedTestimonialIndex] = useState(0)
   const selectedTestimonial = data.testimonials[selectedTestimonialIndex]
   return (
-    <section className="bg-gray-200 pt-12 pb-16 text-center text-lg">
+    <section className="mx-auto w-full max-w-prose rounded bg-slate-200 p-4 pt-12 pb-16 text-center text-lg md:max-w-3xl">
       <h2 className="title mb-4">{data.title}</h2>
-      <p className="mb-4 text-gray-700">{data.description}</p>
+      <p className="mx-auto mb-4 max-w-prose text-gray-700">
+        {data.description}
+      </p>
       <CustomLink link={data.link}>
         <span className="with-arrow text-primary-700 hover:underline">
           {data.link.text}
@@ -17,16 +20,18 @@ const TestimonialsGroup = ({ data }) => {
       </CustomLink>
 
       <div className="mx-auto mt-10 flex w-8/12 max-w-5xl flex-col bg-white text-left shadow-md sm:w-8/12 sm:flex-row sm:shadow-xl">
-        <div className="w-full flex-shrink-0 md:w-4/12">
-          <NextImage media={selectedTestimonial.picture} />
+        <div className="m-2 my-auto block flex-shrink-0 md:w-4/12">
+          <CustomImage
+            className="rounded"
+            media={selectedTestimonial.picture}
+            layout="responsive"
+          />
         </div>
         <div className="flex flex-col justify-between py-4 px-4 sm:px-12 sm:pt-12 sm:pb-4">
-          <div>
-            <NextImage
-              width="120"
-              height="33"
-              media={selectedTestimonial.logo}
-            />
+          <div className="">
+            <div className="h-16 w-16 rounded">
+              <CustomImage media={selectedTestimonial.logo} />
+            </div>
             <p className="mb-6 italic">
               &quot;{selectedTestimonial.text}&quot;
             </p>
@@ -37,19 +42,21 @@ const TestimonialsGroup = ({ data }) => {
               {selectedTestimonial.authorTitle}
             </p>
           </div>
-          <CustomLink
-            link={{
-              url: selectedTestimonial.link,
-              text: '',
-              newTab: false,
-              title: selectedTestimonial.text,
-              id: 0,
-            }}
-          >
-            <span className="with-arrow mt-6 uppercase tracking-wide text-primary-700 hover:underline sm:mt-0 sm:self-end">
-              Read story
-            </span>
-          </CustomLink>
+          {/* {selectedTestimonial.link && (
+            <CustomLink
+              link={{
+                url: selectedTestimonial.link.url,
+                text: '',
+                newTab: false,
+                title: selectedTestimonial.text,
+                id: 0,
+              }}
+            >
+              <span className="with-arrow mt-6 uppercase tracking-wide text-primary-700 hover:underline sm:mt-0 sm:self-end">
+                Read story
+              </span>
+            </CustomLink>
+          )} */}
         </div>
       </div>
 

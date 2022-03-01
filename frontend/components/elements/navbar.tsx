@@ -113,22 +113,22 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
                           <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div className="py-1">
                               {menuLink.links.map((item) => (
-                                <Menu.Item key={item.id}>
-                                  {({ active }) => (
-                                    <Link href={item.url}>
+                                <Link key={item.id} href={item.url} passHref>
+                                  <Menu.Item>
+                                    {({ active }) => (
                                       <a
                                         className={classNames(
                                           active
                                             ? 'bg-gray-100 text-gray-900'
                                             : 'text-gray-700',
-                                          'block px-4 py-2 text-sm hover:bg-gray-100'
+                                          'block px-4 py-2 text-sm hover:bg-gray-900 hover:text-gray-100'
                                         )}
                                       >
                                         {item.text}
                                       </a>
-                                    </Link>
-                                  )}
-                                </Menu.Item>
+                                    )}
+                                  </Menu.Item>
+                                </Link>
                               ))}
                             </div>
                           </Menu.Items>
@@ -157,6 +157,7 @@ const Navbar = ({ navbar, pageContext }: INavbar) => {
             <button
               onClick={() => setMobileMenuIsShown(true)}
               className="block p-1 md:hidden"
+              aria-label="Mobile Navigation"
             >
               <div className="h-8 w-auto">
                 <svg

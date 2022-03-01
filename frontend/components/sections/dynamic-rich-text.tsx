@@ -62,11 +62,11 @@ function DynamicRichText({ data }: Props): ReactElement {
   )
 
   const handleChange = () => {
-    console.log('Start handleChange')
+    // console.log('Start handleChange')
     window.dataLayer.push({
       event: 'test',
     })
-    console.log('END handleChange')
+    // console.log('END handleChange')
   }
 
   useEffect(() => {

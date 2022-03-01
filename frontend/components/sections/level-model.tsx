@@ -16,22 +16,20 @@ interface LevelModelProps {
 
 const LevelModel = ({ data }: LevelModelProps) => {
   return (
-    <div>
-      <div className="mx-auto py-6 text-center lg:text-left">
-        <div className="px-4 sm:px-8">
-          <div className="mx-auto mb-4">
-            <div className="mx-auto max-w-prose md:mt-5 md:max-w-3xl lg:break-words">
-              <MarkdownRender>{data.title}</MarkdownRender>
-            </div>
-            <div className="mx-auto max-w-prose md:mt-5 md:max-w-3xl lg:break-words">
-              <MarkdownRender>{data.content}</MarkdownRender>
-            </div>
+    <div className="mx-auto py-6 text-center lg:text-left">
+      <div className="px-4 sm:px-8">
+        <div className="mx-auto mb-4">
+          <div className="mx-auto max-w-prose md:mt-5 md:max-w-3xl">
+            <MarkdownRender>{data.title}</MarkdownRender>
           </div>
-          <div>
-            {data.LevelRow.map((item) => (
-              <LevelRow key={item.id} data={item} />
-            ))}
+          <div className="mx-auto max-w-prose md:mt-5 md:max-w-3xl">
+            <MarkdownRender>{data.content}</MarkdownRender>
           </div>
+        </div>
+        <div>
+          {data.LevelRow.map((item) => (
+            <LevelRow key={item.id} data={item} />
+          ))}
         </div>
       </div>
     </div>

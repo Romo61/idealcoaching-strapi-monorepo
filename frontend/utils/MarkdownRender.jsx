@@ -166,7 +166,6 @@ const MarkdownRender = (props) => {
               })}
             />
           )
-
         default:
           break
       }
@@ -182,7 +181,7 @@ const MarkdownRender = (props) => {
         skipHtml={true}
         components={customRender}
       >
-        {props.children}
+        {children}
       </ReactMarkdown>
     </div>
   )

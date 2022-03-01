@@ -90,8 +90,10 @@ const SingleCard = ({
                   <p className="text-md bg-gradient-to-r from-green-500 to-blue-500 bg-clip-text text-left font-bold text-transparent">
                     {category}
                   </p>
-                  <div className="mt-2">
-                    <MarkdownRender>{text}</MarkdownRender>
+                  <div className="mt-2 hidden lg:block">
+                    <div>
+                      <MarkdownRender>{text}</MarkdownRender>
+                    </div>
                   </div>
                 </div>
               </div>
