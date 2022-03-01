@@ -34,7 +34,7 @@ const Button: React.FC<ButtonProps> = ({
           },
           // Specific to when the button is fully dark
           {
-            'border-primary-600 bg-primary-600 text-white':
+            'border-primary-600 bg-primary-600 text-black':
               appearance === 'dark',
           },
           // Specific to when the button is dark outlines
@@ -48,7 +48,7 @@ const Button: React.FC<ButtonProps> = ({
           },
           // Specific to when the button is white outlines
           {
-            'border-white text-white': appearance === 'white-outline',
+            'border-white text-black': appearance === 'white-outline',
           }
         )}
       >
