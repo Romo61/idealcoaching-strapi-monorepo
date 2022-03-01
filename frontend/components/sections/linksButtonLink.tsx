@@ -1,6 +1,6 @@
-import { FC } from "react"
-import { ButtonContent } from "../elements/ButtonContent"
-import CustomLink from "./custom-link"
+import { FC } from 'react'
+import { ButtonContent } from '../elements/ButtonContent'
+import CustomLink from './custom-link'
 
 interface Props {
   data: {

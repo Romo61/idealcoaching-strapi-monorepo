@@ -1,48 +1,48 @@
-import { FC } from "react"
+import { FC } from 'react'
 
 interface Props {
   data: {
     __component: string
     id: number
     title: string
-    title_color: "black" | "orange" | "green" | "yellow" | "blue" | "red"
-    title_type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+    title_color: 'black' | 'orange' | 'green' | 'yellow' | 'blue' | 'red'
+    title_type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
   }
 }
 
 const ColorWrapper = ({ children, color }) => {
   switch (color) {
-    case "black":
+    case 'black':
       return (
         <span className="prose prose-lg prose-headings:text-black xl:prose-2xl">
           {children}
         </span>
       )
-    case "orange":
+    case 'orange':
       return (
         <span className="prose prose-lg prose-headings:text-orange-500 xl:prose-2xl xl:prose-2xl">
           {children}
         </span>
       )
-    case "green":
+    case 'green':
       return (
         <span className="prose prose-lg prose-headings:text-green-500 xl:prose-2xl">
           {children}
         </span>
       )
-    case "yellow":
+    case 'yellow':
       return (
         <span className="prose prose-lg prose-headings:text-yellow-500 xl:prose-2xl">
           {children}
         </span>
       )
-    case "blue":
+    case 'blue':
       return (
         <span className="prose prose-lg prose-headings:text-blue-500 xl:prose-2xl">
           {children}
         </span>
       )
-    case "red":
+    case 'red':
       return (
         <span className="prose prose-lg prose-headings:text-red-500 xl:prose-2xl">
           {children}
@@ -59,17 +59,17 @@ const ColorWrapper = ({ children, color }) => {
 
 const HeadingWrapper = ({ children, type }) => {
   switch (type) {
-    case "h1":
+    case 'h1':
       return <h1>{children}</h1>
-    case "h2":
+    case 'h2':
       return <h2>{children}</h2>
-    case "h3":
+    case 'h3':
       return <h3>{children}</h3>
-    case "h4":
+    case 'h4':
       return <h4>{children}</h4>
-    case "h5":
+    case 'h5':
       return <h5>{children}</h5>
-    case "h6":
+    case 'h6':
       return <h6>{children}</h6>
     default:
       return <h6>{children}</h6>
