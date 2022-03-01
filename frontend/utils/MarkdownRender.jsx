@@ -181,7 +181,7 @@ const MarkdownRender = (props) => {
         skipHtml={true}
         components={customRender}
       >
-        {children}
+        {props.children}
       </ReactMarkdown>
     </div>
   )
