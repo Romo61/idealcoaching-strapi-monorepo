@@ -21,7 +21,7 @@ const nextConfig = {
     ],
   },
   async redirects() {
- return [
+    return [
       {
         source: "/fuehrungskraefteentwicklung",
         destination: "/coaching-und-beratung",
@@ -747,7 +747,6 @@ const nextConfig = {
         permanent: true,
       },
     ]
-
   },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {

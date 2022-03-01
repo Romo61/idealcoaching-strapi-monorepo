@@ -1,26 +1,16 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="de">
         <Head>
-
-          <meta
-            name="google-site-verification"
-            content="_GnkHr4rAs_WXQy69wxzElwawE3bBM9Svu9bzMHQFCg"
-          />
-          <meta
-            name="msvalidate.01"
-            content="6A9167171CB75C3A6EB9B2299F08F38C"
-          />
           <script
             id="usercentrics-cmp"
             data-settings-id="t4_Zx_gEs"
             src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-             async
-
+            async
           ></script>
 
           <script
@@ -56,7 +46,7 @@ export default class MyDocument extends Document {
               src="https://www.googletagmanager.com/ns.html?id=GTM-MBTTTNH"
               height="0"
               width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
+              style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
           <Main />
