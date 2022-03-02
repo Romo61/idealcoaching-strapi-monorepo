@@ -1,14 +1,15 @@
-name: auto-merge
+name: Auto approve PRs by dependabot
 
-on:
-  pull_request:
+# Trigger the workflow on pull request
+on: pull_request_target
 
 jobs:
-  auto-merge:
+  autoapprove:
+    name: Auto-Approve a PR by dependabot
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - name: Auto approve
+        uses: cognitedata/auto-approve-dependabot-action@v3.0.1
+        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         with:
-          target: minor
-          github-token: ${{ secrets.mytoken }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
