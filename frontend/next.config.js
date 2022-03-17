@@ -88,16 +88,6 @@ const nextConfig = {
       },
     ]
 
-    /**
-     * Because the NRN demo uses Stacker provider to show our app as an embedded iframe, we need to allow our pages to be embedded by other websites.
-     *
-     * In staging, we don't want to allow any website to embed our app by default, to avoid customers mistakenly use our preview URL in their production app.
-     * Although, we want to allow Stacker to do it, so we can preview our website from Stacker (quick-preview).
-     *
-     * In production, we want to allow any website to embed our app by default, because we don't want to manage the list of websites that might embed our content.
-     * Alternatively, we could also generate the CSP dynamically by pre-fetching the allowed websites from our CMS/API.
-     */
-
     console.info("Using headers:", JSON.stringify(headers, null, 2))
 
     return headers
