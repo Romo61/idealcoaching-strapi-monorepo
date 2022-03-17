@@ -76,6 +76,14 @@ const nextConfig = {
             // XXX You might want to restrict even more the referrer policy
             value: `no-referrer-when-downgrade`,
           },
+          {
+            key: "X-Frame-Options",
+            value: `SAMEORIGIN`,
+          },
+          {
+            key: "Content-Security-Policy",
+            value: `frame-ancestors 'self`,
+          },
         ],
       },
     ]
