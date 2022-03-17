@@ -53,7 +53,7 @@ const nextConfig = {
         ],
       },
       {
-        source: "/(.*?)", // Match all paths, including "/" - See https://github.com/vercel/next.js/discussions/17991#discussioncomment-112028
+        source: "/:path*",
         headers: [
           // This directive helps protect against some XSS attacks
           // See https://infosec.mozilla.org/guidelines/web_security#x-content-type-options
@@ -64,7 +64,7 @@ const nextConfig = {
         ],
       },
       {
-        source: "/(.*?)", // Match all paths, including "/" - See https://github.com/vercel/next.js/discussions/17991#discussioncomment-112028
+        source: "/:path*",
         headers: [
           // This directive helps protect user's privacy and might avoid leaking sensitive data in urls to 3rd parties (e.g: when loading a 3rd party asset)
           // See https://infosec.mozilla.org/guidelines/web_security#referrer-policy
