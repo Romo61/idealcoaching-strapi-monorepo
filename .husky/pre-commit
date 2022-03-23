@@ -3,5 +3,4 @@
 
 # yarn tokei
 # yarn tokei && git add -A .
-cd frontend
-yarn lint:fix
+npx lint-staged
