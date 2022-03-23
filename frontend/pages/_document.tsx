@@ -10,12 +10,12 @@ export default class MyDocument extends Document {
     let contentSecurityPolicy = ""
     if (process.env.NODE_ENV === "production") {
       contentSecurityPolicy = `default-src 'self'; style-src 'nonce-${nonce}';`
-    } else {
+    } /* else {
       // react-refresh needs 'unsafe-eval'
       // Next.js needs 'unsafe-inline' during development https://github.com/vercel/next.js/blob/canary/packages/next/client/dev/fouc.js
       // Specifying 'nonce' makes a modern browsers ignore 'unsafe-inline'
       contentSecurityPolicy = `default-src 'self'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-eval';`
-    }
+    } */
 
     ctx.res.setHeader("Content-Security-Policy", contentSecurityPolicy)
     return { ...docProps, nonce }
