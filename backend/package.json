@@ -15,7 +15,6 @@
     "@sendgrid/mail": "^7.7.0",
     "knex": "1.0.4",
     "pg": "^8.7.1",
-    "sqlite3": "5.0.8",
     "strapi": "3.6.10",
     "strapi-admin": "3.6.10",
     "strapi-connector-bookshelf": "3.6.10",
