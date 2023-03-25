@@ -14,43 +14,43 @@ const ColorWrapper = ({ children, color }) => {
   switch (color) {
     case "black":
       return (
-        <span className="prose prose-lg prose-headings:text-black xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-black">
           {children}
         </span>
       )
     case "orange":
       return (
-        <span className="prose prose-lg prose-headings:text-orange-500 xl:prose-2xl xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl xl:prose-2xl prose-headings:text-orange-500">
           {children}
         </span>
       )
     case "green":
       return (
-        <span className="prose prose-lg prose-headings:text-green-500 xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-green-500">
           {children}
         </span>
       )
     case "yellow":
       return (
-        <span className="prose prose-lg prose-headings:text-yellow-500 xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-yellow-500">
           {children}
         </span>
       )
     case "blue":
       return (
-        <span className="prose prose-lg prose-headings:text-blue-500 xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-blue-500">
           {children}
         </span>
       )
     case "red":
       return (
-        <span className="prose prose-lg prose-headings:text-red-500 xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-red-500">
           {children}
         </span>
       )
     default:
       return (
-        <span className="prose prose-lg prose-headings:text-black xl:prose-2xl">
+        <span className="prose prose-lg xl:prose-2xl prose-headings:text-black">
           {children}
         </span>
       )
