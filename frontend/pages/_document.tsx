@@ -1,11 +1,31 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Document, { Html, Head, Main, NextScript } from "next/document"
+import { nanoid } from "nanoid"
 
 export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const nonce = nanoid()
+    const docProps = await ctx.defaultGetInitialProps(ctx, { nonce })
+
+    let contentSecurityPolicy = ""
+    if (process.env.NODE_ENV === "production") {
+      contentSecurityPolicy = `default-src 'self'; style-src 'nonce-${nonce}';`
+    } /* else {
+      // react-refresh needs 'unsafe-eval'
+      // Next.js needs 'unsafe-inline' during development https://github.com/vercel/next.js/blob/canary/packages/next/client/dev/fouc.js
+      // Specifying 'nonce' makes a modern browsers ignore 'unsafe-inline'
+      contentSecurityPolicy = `default-src 'self'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-eval';`
+    } */
+
+    ctx.res.setHeader("Content-Security-Policy", contentSecurityPolicy)
+    return { ...docProps, nonce }
+  }
   render() {
     return (
       <Html lang="de">
         <Head>
+          {/* @ts-ignore */}
+          <meta property="csp-nonce" content={this.props.nonce} />
           {/* <script
             id="usercentrics-cmp"
             data-settings-id={process.env.NEXT_PUBLIC_USERCENTRICS_SETTINGS_ID}
